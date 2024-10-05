@@ -21,74 +21,10 @@ navOverlay && navOverlay.addEventListener("click", () => {
     navIcon.classList.remove("open");
 });
 
-// color switcher
-document.querySelector(".color-switcher-btn").addEventListener("click", () => {
-    document.querySelector(".color-switcher").classList.toggle("opened");
-});
-
-// change color
-const colorBtns = document.querySelectorAll(".color-btn");
-colorBtns.forEach((btn) =>
-    btn.addEventListener("click", () => {
-        let color = btn.getAttribute("data-color");
-        document.documentElement.style.setProperty("--primary", color);
-        localStorage.setItem("bg", color);
-    }),
-);
-
-// rtl
-const ltrBtn = document.querySelector(".ltr");
-const rtlBtn = document.querySelector(".rtl");
-
-rtlBtn.addEventListener("click", () => {
-    document.documentElement.dir = "rtl";
-    localStorage.setItem("dir", "rtl");
-    rtlBtn.classList.add("active");
-    ltrBtn.classList.remove("active");
-});
-
-ltrBtn.addEventListener("click", () => {
-    document.documentElement.dir = "ltr";
-    localStorage.setItem("dir", "ltr");
-    ltrBtn.classList.add("active");
-    rtlBtn.classList.remove("active");
-});
-
-// grainded bg
-const grain               = document.getElementById("grain");
-const grainToggleCheckbox = document.querySelector(".grained-checkbox");
-
-grainToggleCheckbox.addEventListener("change", (e) => {
-    if (e.target.checked) {
-        grain.classList.add("grain");
-    }
-    else {
-        grain.classList.remove("grain");
-    }
-});
-
-const savedColor = localStorage.getItem("bg");
-const savedDir   = localStorage.getItem("dir");
-if (savedColor) {
-    console.log(savedColor);
-    document.documentElement.style.setProperty("--primary", savedColor);
-}
-if (savedDir) {
-    document.documentElement.dir = savedDir;
-    if (savedDir == "rtl") {
-        rtlBtn.classList.add("active");
-        ltrBtn.classList.remove("active");
-    }
-    else {
-        ltrBtn.classList.add("active");
-        rtlBtn.classList.remove("active");
-    }
-}
-
 // typewritter effect on hero
 if (document.getElementById("typewriter")) {
     new Typewriter("#typewriter", {
-        strings:   ["Developer", "Designer"],
+        strings:   ["Developer", "Architect", "Fullstack", "Solver"],
         autoStart: true,
         loop:      true,
         delay:     200,
@@ -473,28 +409,12 @@ links.forEach((link) => {
 gsap.registerPlugin(ScrollTrigger);
 
 if (document.getElementById("about_me")) {
-    // gsap.from(".hero-content", { x: -400, duration: 2, scale: 0, opacity: 0 });
-    if (savedDir == "rtl") {
-        gsap.from(".nav-link", {duration: 0.8, delay: 0.5, opacity: 0, scale: 0, stagger: 0.15});
-    }
-    else {
-        gsap.from(".nav-link", {duration: 0.8, delay: 0.5, opacity: 0, scale: 0, stagger: 0.1});
-    }
+    gsap.from(".nav-link", {duration: 0.8, delay: 0.5, opacity: 0, scale: 0, stagger: 0.1});
     gsap.from(".img-wrapper", {duration: 1.5, scale: 1.5, ease: "back", delay: 0.3, opacity: 0});
     gsap.from(".work-btn", {duration: 1.2, scale: 0, opacity: 0, ease: "bounce"});
     gsap.from(".contact-btn", {duration: 1.2, scale: 0, opacity: 0, ease: "bounce"});
-
-    if (savedDir != "rtl") {
-        const freelancer = new SplitType(".freelancer").chars;
-        const desc       = new SplitType(".description").chars;
-        gsap.from(freelancer, {duration: 1.5, rotateX: 180, opacity: 0, ease: "bounce", stagger: 0.05});
-        gsap.from(desc, {duration: 1, rotateY: 180, stagger: 0.05});
-    }
-    else {
-        gsap.from(".freelancer", {duration: 0.8, y: 200, scale: 0});
-        gsap.from(".description", {duration: 0.8, y: 200, scale: 0});
-    }
-
+    gsap.from(".freelancer", {duration: 0.8, y: 200, scale: 0});
+    gsap.from(".description", {duration: 0.8, y: 200, scale: 0});
     gsap.to(".navigation", {"--height": "100%", duration: 1, ease: "power1.inOut"});
 
     // about section
