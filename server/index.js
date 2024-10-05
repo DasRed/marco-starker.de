@@ -5,6 +5,7 @@ import compress from 'koa-compress';
 import serve from 'koa-static';
 import path from 'path';
 import execute from '../build/execute.js';
+import template from './template/index.js';
 
 await execute();
 
@@ -14,6 +15,8 @@ const router   = new Router();
 const app      = new Koa();
 
 app.use(compress());
+
+router.get('/', async (ctx) => ctx.body = template());
 
 app.use(serve(path.join(rootPath, 'public')))
    .use(serve(path.join(rootPath, '.')))

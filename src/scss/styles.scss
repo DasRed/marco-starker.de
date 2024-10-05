@@ -790,13 +790,6 @@ h6 {
             }
         }
     }
-
-    [data-content="frontend"] {--section-order: 2; order: var(--section-order);}
-    [data-content="backend"] {--section-order: 1; order: var(--section-order);}
-    [data-content="devops"] {--section-order: 3; order: var(--section-order);}
-    [data-content="architecture"] {--section-order: 4; order: var(--section-order);}
-    [data-content="project"] {--section-order: 5; order: var(--section-order);}
-    [data-content] .number-circle h2::after {counter-reset: variable var(--section-order); content: '0' counter(variable);}
 }
 
 /* attainments */
