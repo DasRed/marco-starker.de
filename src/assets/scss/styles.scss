@@ -402,10 +402,6 @@ h6 {
 .hero {
     min-height: 100vh;
 
-    &.blog-hero {
-        min-height: 85vh;
-    }
-
     padding-top: 100px;
     @include min-width(xxl) {
         padding-top: 200px;
@@ -1401,9 +1397,9 @@ h6 {
 
 // contact section
 .contact {
-    padding-top: 60px 0;
+    padding-top: 60px;
     @include min-width(xl) {
-        padding-top: 120px 0;
+        padding-top: 120px;
     }
     padding-bottom: 40px;
 
@@ -2066,66 +2062,6 @@ h6 {
     @include min-width(xl) {
         padding: 20px;
     }
-
-    .blog-topic {
-        border: 1px solid rgba(var(--black), 0.1);
-        padding: 12px;
-        cursor: pointer;
-        border-radius: 12px;
-        transition-duration: 300ms;
-
-        &:hover {
-            background-color: rgba(var(--black), 0.05);
-        }
-
-        .title {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-
-            span {
-                width: 28px;
-                height: 28px;
-                display: flex;
-                border-radius: 4px;
-                align-items: center;
-                justify-content: center;
-                background-color: rgb(var(--black));
-                color: rgb(var(--white));
-            }
-
-            p {
-                font-size: 18px;
-            }
-        }
-
-        &.active {
-            .list {
-                max-height: 500px;
-            }
-        }
-
-        .list {
-            overflow: hidden;
-            max-height: 0;
-            transition: max-height 0.5s linear;
-
-            .list-inner {
-                display: flex;
-                border-left: 1px solid rgba(var(--black), 0.1);
-                list-style-type: none;
-                padding-left: 20px;
-                margin-top: 20px;
-                margin-left: 12px;
-                flex-direction: column;
-                gap: 8px;
-
-                li a {
-                    font-size: 14px;
-                }
-            }
-        }
-    }
 }
 
 .pagination {
@@ -2158,13 +2094,6 @@ h6 {
             background-color: rgb(var(--black));
             color: #fff;
         }
-    }
-}
-
-.blog-details {
-    padding-bottom: 60px;
-    @include min-width(xl) {
-        padding-bottom: 100px;
     }
 }
 
@@ -2228,23 +2157,6 @@ h6 {
     }
     @include min-width(xxl) {
         padding: 40px;
-    }
-}
-
-.blog-video {
-    .youtube {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 80px;
-        height: 80px;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        cursor: pointer;
-        justify-content: center;
-        background-color: rgb(var(--white));
     }
 }
 
@@ -2363,53 +2275,6 @@ h6 {
     }
 }
 
-// blogs
-.blog-card {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 12px;
-    border-radius: 12px;
-    background-color: rgba(var(--white), 0.1);
-    border: 1px solid rgba(var(--black), 0.1);
-    align-items: center;
-    transition-duration: 300ms;
-
-    .img-wrapper {
-        flex-shrink: 0;
-    }
-
-    img {
-        transition-duration: 300ms;
-    }
-
-    &:hover {
-        background-color: rgba(var(--black), 0.03);
-
-        img {
-            transform: scale(1.1);
-        }
-    }
-
-    @media (max-width: 768px) {
-        img {
-            width: 100%;
-        }
-    }
-    @include min-width(md) {
-        flex-direction: row;
-    }
-    @include min-width(xl) {
-        gap: 32px;
-    }
-
-    .details {
-        margin-bottom: 20px;
-        padding-bottom: 20px;
-        border-bottom: 1px solid rgba(var(--black), 0.2);
-    }
-}
-
 // newsletter section
 .newsletter {
     background-color: rgba(var(--white), 0.1);
@@ -2463,20 +2328,6 @@ footer {
 
 .underlined {
     text-decoration: underline;
-}
-
-.header-blog {
-    padding: 14px 0;
-    width: 100%;
-    z-index: 10;
-    left: 0;
-    right: 0;
-    background-color: rgb(var(--primary));
-    position: fixed;
-
-    img {
-        max-width: 100%;
-    }
 }
 
 .connect {

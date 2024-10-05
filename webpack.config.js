@@ -1,17 +1,13 @@
-"use strict";
-const CopyPlugin = require("copy-webpack-plugin");
-const path = require("path");
-const glob = require("glob");
-const autoprefixer = require("autoprefixer");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-const miniCssExtractPlugin = require("mini-css-extract-plugin");
-const { PurgeCSSPlugin } = require("purgecss-webpack-plugin");
+import CopyPlugin from 'copy-webpack-plugin';
+import autoprefixer from 'autoprefixer';
+import HtmlWebpackPlugin from 'html-webpack-plugin';
+import miniCssExtractPlugin from 'mini-css-extract-plugin';
+import path from 'path';
+import {fileURLToPath} from 'url';
 
-const PATHS = {
-  src: path.join(__dirname, "src"),
-};
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
-module.exports = {
+export default {
   mode: "development",
   entry: "./src/assets/js/app.js",
   output: {
@@ -26,17 +22,12 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({ template: "./src/index.html", filename: "./index.html", minify: false }),
-    new HtmlWebpackPlugin({ template: "./src/blogs.html", filename: "./blogs.html", minify: false }),
-    new HtmlWebpackPlugin({ template: "./src/blog-details.html", filename: "./blog-details.html", minify: false }),
     new miniCssExtractPlugin({
       filename: "assets/css/index.css",
     }),
     new CopyPlugin({
       patterns: [{ from: "src/assets/images", to: "assets/images" }],
     }),
-    // new PurgeCSSPlugin({
-    //   paths: glob.sync(`${PATHS.src}/**/*`, { nodir: true }),
-    // }),
   ],
   module: {
     rules: [

@@ -1,11 +1,13 @@
 // Import our custom CSS
-import "../scss/styles.scss";
-import Swiper from "swiper";
-// Import all of Bootstrap's JS
-import * as bootstrap from "bootstrap";
-import {Autoplay, Navigation, Pagination, Scrollbar} from "swiper/modules";
-import ApexCharts from "apexcharts";
-import Typewriter from "typewriter-effect/dist/core";
+import '../scss/styles.scss';
+import Swiper from 'swiper';
+import {Autoplay, Navigation, Pagination, Scrollbar} from 'swiper/modules';
+import ApexCharts from 'apexcharts';
+import Typewriter from 'typewriter-effect/dist/core.js';
+import shuffleLetters from 'shuffle-letters';
+import gsap from 'gsap';
+import {ScrollTrigger} from 'gsap/ScrollTrigger.js';
+import emailjs from '@emailjs/browser';
 
 const navIcon = document.querySelector(".nav-icon");
 const nav     = document.querySelector(".navigation");
@@ -353,11 +355,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-import shuffleLetters from "shuffle-letters";
-import gsap from "gsap";
-import {ScrollTrigger} from "gsap/ScrollTrigger";
-import SplitType from "split-type";
-
 function handleClassChange(mutationsList, observer) {
     mutationsList.forEach((mutation) => {
         if (mutation.type === "attributes" && mutation.attributeName === "class") {
@@ -394,18 +391,7 @@ links.forEach((link) => {
     });
 });
 
-// // shuffle on hover
-// links.forEach((link) => {
-//   link.addEventListener("mouseover", () => {
-//     link.classList.add("active");
-//   });
-//   link.addEventListener("mouseout", () => {
-//     link.classList.remove("active");
-//   });
-// });
-
 // animations
-
 gsap.registerPlugin(ScrollTrigger);
 
 if (document.getElementById("about_me")) {
@@ -618,10 +604,6 @@ if (document.getElementById("about_me")) {
     });
 }
 
-import emailjs from "@emailjs/browser";
-import GLightbox from "glightbox";
-
-
 document.addEventListener("mousemove", function (event) {
     const numberOutlineOne = document.querySelectorAll(".number-outline-one");
     const numberOutlineTwo = document.querySelectorAll(".number-outline-two");
@@ -652,36 +634,11 @@ if (projects.length) {
     });
 }
 
-// show blogs
-const topics = document.querySelectorAll(".blog-topic");
-if (topics.length) {
-    topics.forEach((topic) => {
-        topic.addEventListener("click", function () {
-            if (this.classList.contains("active")) {
-                // If clicking an active topic, just remove its active class
-                this.classList.remove("active");
-            }
-            else {
-                // Otherwise, remove active from all and add to this one
-                topics.forEach((t) => t.classList.remove("active"));
-                this.classList.add("active");
-            }
-        });
-    });
-}
-
 // show year in footer
 const year = document.getElementById("year");
 if (year) {
     year.innerText = new Date().getFullYear();
 }
-
-// youtube video popup
-
-if (document.querySelector(".youtube")) {
-    GLightbox({selector: ".youtube"});
-}
-
 
 // contact form
 (function () {
@@ -694,9 +651,7 @@ if (document.querySelector(".youtube")) {
 const submitBtn = document.getElementById("submit-btn");
 window.onload   = function () {
     const contactForm = document.getElementById("contact-form");
-    contactForm &&
-    contactForm.addEventListener("submit", function (event) {
-
+    contactForm && contactForm.addEventListener("submit", function (event) {
         event.preventDefault();
 
         // add template id and service id here
