@@ -22,3 +22,4 @@
 .npmrc
 /dist
 /out.json
+/public/dist
