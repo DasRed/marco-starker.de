@@ -1,4 +1,4 @@
-import design from './design.js';
+import architecture from './architecture.js';
 import developer from './developer.js';
 import language from './language.js';
 
@@ -6,7 +6,7 @@ export default () => `
 <section id="attainments" class="attainments section position-relative">
     <span class="section-title-overlay-text">ATTAINMENTS</span>
     
-    ${[developer, design, language].map((fn, index) => fn(`0${index + 1}`)).join('')}
+    ${[developer, architecture, language].map((fn, index) => fn(`0${index + 1}`)).join('')}
     
     <div class="col-12">
         <a href="#fun_facts" class="d-flex gap-4 align-items-center next-chapter">

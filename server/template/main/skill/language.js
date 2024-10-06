@@ -13,13 +13,13 @@ export default (number) => `
         <div class="row g-3">
             <div class="col-12 col-sm-6 col-md-4">
                 <div class="d-flex flex-column align-items-center mb-4">
-                    <div class="chart-language mb-4" data-level="100"></div>
+                    <div class="chart-circle mb-4" data-level="100"></div>
                     <button class="btn btn-outline-secondary px-5">German</button>
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-md-4">
                 <div class="d-flex flex-column align-items-center mb-4">
-                    <div class="chart-language mb-4" data-level="80"></div>
+                    <div class="chart-circle mb-4" data-level="80"></div>
                     <button class="btn btn-outline-secondary px-5">English</button>
                 </div>
             </div>

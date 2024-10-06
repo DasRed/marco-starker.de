@@ -9,9 +9,9 @@ export default () => `
         <div class="col-sm-6 col-md-4 col-xl-3">
             <div class="fun-fact">
                 <div class="numbers">
-                    <span class="number-outline-one">145</span>
-                    <span class="number-outline-two">145</span>
-                    <span class="number-main">145</span>
+                    <span class="number-outline-one">88</span>
+                    <span class="number-outline-two">88</span>
+                    <span class="number-main">88</span>
                 </div>
                 <p>Finished Projects</p>
             </div>
@@ -19,9 +19,9 @@ export default () => `
         <div class="col-sm-6 col-md-4 offset-md-1 col-xl-3">
             <div class="fun-fact">
                 <div class="numbers">
-                    <span class="number-outline-one">128</span>
-                    <span class="number-outline-two">128</span>
-                    <span class="number-main">128</span>
+                    <span class="number-outline-one">75</span>
+                    <span class="number-outline-two">75</span>
+                    <span class="number-main">75</span>
                 </div>
                 <p>Happy Customers</p>
             </div>
@@ -31,9 +31,9 @@ export default () => `
         <div class="col-sm-6 col-md-4 offset-md-2 offset-xl-5 col-xl-3">
             <div class="fun-fact">
                 <div class="numbers">
-                    <span class="number-outline-one">865</span>
-                    <span class="number-outline-two">865</span>
-                    <span class="number-main">865</span>
+                    <span class="number-outline-one">35k+</span>
+                    <span class="number-outline-two">35k+</span>
+                    <span class="number-main">35k+</span>
                 </div>
                 <p>Working Hours</p>
             </div>
@@ -41,9 +41,9 @@ export default () => `
         <div class="col-sm-6 col-md-4 offset-md-1 col-xl-3">
             <div class="fun-fact">
                 <div class="numbers">
-                    <span class="number-outline-one">232</span>
-                    <span class="number-outline-two">232</span>
-                    <span class="number-main">232</span>
+                    <span class="number-outline-one">17k+</span>
+                    <span class="number-outline-two">17k+</span>
+                    <span class="number-main">17k+</span>
                 </div>
                 <p>Coffe Cups</p>
             </div>
