@@ -12,15 +12,15 @@ export default () => `
                     <h5>(09/2019 - 11/2024)</h5>
                     <h3>Senior Software Developer at Zeppelin / z-Lab GmbH</h3>
                     <ul class="service-list">
-                        <li><i class="ph ph-caret-double-right"></i> Entwicklung von Webanwendungen, Microservices, REST APIs, IoT Integrationen.</li> 
-                        <li><i class="ph ph-caret-double-right"></i> Single Sign-On für die Gruppe</li>
-                        <li><i class="ph ph-caret-double-right"></i> Modulare Plattform mit eigenen Apps</li>
-                        <li><i class="ph ph-caret-double-right"></i> Replatforming der gesamten Webseite von Zeppelin</li>
-                        <li><i class="ph ph-caret-double-right"></i> Notification Services</li>
+                        <li><i class="ph ph-caret-double-right"></i> Development of web applications, microservices, REST APIs, IoT integrations.</li> 
+                        <li><i class="ph ph-caret-double-right"></i> Single sign-on for the group</li>
+                        <li><i class="ph ph-caret-double-right"></i> Modular platform with custom apps</li>
+                        <li><i class="ph ph-caret-double-right"></i> Replatforming the entire Zeppelin website</li>
+                        <li><i class="ph ph-caret-double-right"></i> Notification services</li>
                     </ul>
                     <p class="technologies">
-                        Technische Planung, Entwicklung, Pflege und Wartung, Node.js, Strapi, Next.js, PHP, Laravel, Symfony, Svelte, 
-                        SASS, AWS, Kubernetes, Docker, Performance Analysen, Scrum, Projektplanung
+                        Technical planning, development, maintenance, Node.js, Strapi, Next.js, PHP, Laravel, Symfony, Svelte, 
+                        SASS, AWS, Kubernetes, Docker, performance analysis, Scrum, project planning
                     </p>
                 </div>
                 
@@ -28,54 +28,54 @@ export default () => `
                     <h5>(04/2016 - 08/2019)</h5>
                     <h3>Senior Software Developer at posterXXL</h3>
                     <ul class="service-list">
-                        <li><i class="ph ph-caret-double-right"></i> Produktkonfigurator „Studio“</li>
-                        <li><i class="ph ph-caret-double-right"></i> Backend-Applikation zur Konfiguration der Produkte im posterxxl Projekt „Studio“ und der Produktion</li>
-                        <li><i class="ph ph-caret-double-right"></i> Shop von posterXXL</li>
+                        <li><i class="ph ph-caret-double-right"></i> Product configurator "Studio"</li>
+                        <li><i class="ph ph-caret-double-right"></i> Backend application for configuring products in the posterXXL "Studio" project and production</li>
+                        <li><i class="ph ph-caret-double-right"></i> posterXXL shop</li>
                     </ul>
                     <p class="technologies">
-                        Technische Planung, Entwicklung, Pflege und Wartung, JavaScript, RequireJS, BackboneJS, PHP, Symfony, Slim, Doctrine, Eloquent, Redis, 
-                        MySQL, MongoDB, SASS, Docker, AWS, GIT, Performance Analysen, Scrum, Projektplanung
+                        Technical planning, development, maintenance, JavaScript, RequireJS, BackboneJS, PHP, Symfony, Slim, Doctrine, Eloquent, Redis, 
+                        MySQL, MongoDB, SASS, Docker, AWS, GIT, performance analysis, Scrum, project planning
                      </p>
                 </div>
                 
                 <div class="experience-item">
                     <h5>(01/2017 - 06/2018)</h5>
-                    <h3>Freiberufliche Tätigkeit</h3>
-                    <p>Technische Planung und Entwicklung eine Trading Plattform inklusive Frontend, Backend, Gateway und Mobile App</p>
+                    <h3>Freelance Work</h3>
+                    <p>Technical planning and development of a trading platform including frontend, backend, gateway, and mobile app</p>
                     <p class="technologies">React Native, React, Node.js, WebSocket, SASS, iOS, Android, Docker, Binary Bank Format</p>
                 </div>
                 
                 <div class="experience-item">
                     <h5>(07/2015 - 11/2015)</h5>
                     <h3>Senior Software Developer at myposter GmbH</h3>
-                    <p>Weiterentwicklung des Shopsystem und der Anbindung zur Produktion</p>
+                    <p>Further development of the shop system and integration with production</p>
                     <p class="technologies">
-                        PHP, Node.js, Webentwicklung, JavaScript, SQL, Scrum, Web Services, Agile Methoden, Microservices, 
-                        GitFlow, OOP, Softwarearchitektur, MySQL, Full-Stack-Entwicklung, Back-End-Webentwicklung, CI/CD
+                        PHP, Node.js, web development, JavaScript, SQL, Scrum, web services, agile methodologies, microservices, 
+                        GitFlow, OOP, software architecture, MySQL, full-stack development, back-end web development, CI/CD
                     </p>
                 </div>
                 
                 <div class="experience-item">
                     <h5>(04/2015 - 06/2015)</h5>
-                    <h3> Stellvertretender Teammanager at CHECK24 Vergleichsportal</h3>
-                    <p>Weiterentwicklung des Bereiches Stadthotel, Unterstützung des Teamleiters</p>
+                    <h3>Deputy Team Manager at CHECK24 Comparison Portal</h3>
+                    <p>Further development of the city hotel section, supporting the team lead</p>
                     <p class="technologies">
-                        PHP, Node.js, Webentwicklung, JavaScript, SQL, Scrum, Web Services, Agile Methoden, Microservices, 
-                        GitFlow, OOP, Softwarearchitektur, MySQL, Full-Stack-Entwicklung, Back-End-Webentwicklung, CI/CD
+                        PHP, Node.js, web development, JavaScript, SQL, Scrum, web services, agile methodologies, microservices, 
+                        GitFlow, OOP, software architecture, MySQL, full-stack development, back-end web development, CI/CD
                     </p>
                 </div>
                 
                 <div class="experience-item">
-                    <h5>(05/20213 - 03/2015)</h5>
+                    <h5>(05/2013 - 03/2015)</h5>
                     <h3>Senior Software Developer at Bryanston Services (D) GmbH</h3>
                     <ul class="service-list">
-                        <li><i class="ph ph-caret-double-right"></i> Entwicklung einer offline funktionieren Single Page Applikation mit Anzeige der Rohstoffkurse</li>
-                        <li><i class="ph ph-caret-double-right"></i> Tool zur Routenplanung von Güterschiffen</li>
-                        <li><i class="ph ph-caret-double-right"></i> eine Lotterieseite</li>
+                        <li><i class="ph ph-caret-double-right"></i> Development of an offline-capable single-page application displaying commodity prices</li>
+                        <li><i class="ph ph-caret-double-right"></i> Tool for planning routes for cargo ships</li>
+                        <li><i class="ph ph-caret-double-right"></i> A lottery website</li>
                     </ul>
                     <p class="technologies">
-                        SQL, Node.js, Scrum, Software Development, Web Services, Agile Methoden, Microservices, GitFlow, OOP, Softwarearchitektur,
-                        MySQL, Full-Stack-Entwicklung, Back-End-Webentwicklung, CI/CD, PHP, Webentwicklung, JavaScript, Modultests
+                        SQL, Node.js, Scrum, software development, web services, agile methodologies, microservices, GitFlow, OOP, software architecture,
+                        MySQL, full-stack development, back-end web development, CI/CD, PHP, web development, JavaScript, unit tests
                     </p>
                 </div>
                 
@@ -83,12 +83,12 @@ export default () => `
                     <h5>(05/2011 - 04/2013)</h5>
                     <h3>Technical Lead at Travian Games</h3>
                     <p>
-                        Verantwortlich für das Architekturdesign, die Konzeption, die Entwicklung von Prototypen sowie die Analyse, Umsetzung, Pflege, Wartung und Weiterentwicklung von Browserspielen im PHP-Umfeld.
-                        Aufgabenbereiche umfassten die Erstellung technischer Dokumentation, Caching-Strategien, Datenbankmanagement, Performanceoptimierung sowie die Integration von Schnittstellen. 
-                        Dabei kamen Technologien wie Zend-Framework, MySQL, PHPUnit, JavaScript, (X)HTML, CSS und Node.js zum Einsatz. Zudem übernahm ich die technische Führung und Weiterentwicklung von Teammitgliedern.
+                        Responsible for architecture design, prototyping, analysis, implementation, maintenance, and further development of browser games in the PHP environment.
+                        Duties included creating technical documentation, caching strategies, database management, performance optimization, and interface integration.
+                        Technologies used included Zend Framework, MySQL, PHPUnit, JavaScript, (X)HTML, CSS, and Node.js. Additionally, I provided technical leadership and development to team members.
                     </p>                        
                     <p class="technologies">
-                        PHP, Node.js, Scrum, Software Development, SQL, Web Services, Agile Methoden, GitFlow, OOP, Softwarearchitektur, MySQL, Full-Stack-Entwicklung, Back-End-Webentwicklung, CI/CD, Webentwicklung, JavaScript, Modultests
+                        PHP, Node.js, Scrum, software development, SQL, web services, agile methodologies, GitFlow, OOP, software architecture, MySQL, full-stack development, back-end web development, CI/CD, web development, JavaScript, unit tests
                     </p>
                 </div>
                 
@@ -96,11 +96,11 @@ export default () => `
                     <h5>(09/2009 - 04/2011)</h5>
                     <h3>Senior Software Developer at Travian Games</h3>
                     <p>
-                        Verantwortlich für die Konzeption, Prototypenentwicklung, Analyse, Umsetzung, Pflege, Wartung und Weiterentwicklung von Browserspielen im PHP-Umfeld. Fokus auf Caching, Datenbankmanagement, 
-                        Performanceoptimierung sowie die Integration von Schnittstellen. Eingesetzte Technologien umfassten Zend-Framework, MySQL, PHPUnit, JavaScript, (X)HTML und CSS.
+                        Responsible for the design, prototyping, analysis, implementation, maintenance, and further development of browser games in the PHP environment. Focus on caching, database management, 
+                        performance optimization, and interface integration. Technologies used included Zend Framework, MySQL, PHPUnit, JavaScript, (X)HTML, and CSS.
                     </p>
                     <p class="technologies">
-                        PHP, Node.js, Scrum, Software Development, SQL, Web Services, Agile Methoden, GitFlow, OOP, Softwarearchitektur, MySQL, Full-Stack-Entwicklung, Back-End-Webentwicklung, CI/CD, Webentwicklung, JavaScript, Modultests
+                        PHP, Node.js, Scrum, software development, SQL, web services, agile methodologies, GitFlow, OOP, software architecture, MySQL, full-stack development, back-end web development, CI/CD, web development, JavaScript, unit tests
                     </p>
                 </div>
                 
@@ -108,56 +108,56 @@ export default () => `
                     <h5>(02/2008 - 07/2009)</h5>
                     <h3>Head Software Developer at sapodo SE</h3>
                     <p>
-                        Frontend-Entwickung, Webprogrammierung und -Design, selbständige Konzeptionierung, Umsetzung, Pflege, Wartung, Entwicklung einer Webanwendung zur interaktiven 
-                        Angebotspräsentation und Durchführung via Chat und Videostreaming im PHP-Umfeld mit Flash, JavaScript, (x)Html, CSS, MySQL, etc.
+                        Frontend development, web programming and design, independent conceptualization, implementation, maintenance, development of a web application for interactive 
+                        offer presentations and execution via chat and video streaming in the PHP environment with Flash, JavaScript, (x)Html, CSS, MySQL, etc.
                     </p>
                     <p class="technologies">
-                        PHP, SQL, Software Development, Web Services, OOP, Full-Stack-Entwicklung, Back-End-Webentwicklung, PostgreSQL, Webentwicklung
+                        PHP, SQL, software development, web services, OOP, full-stack development, back-end web development, PostgreSQL, web development
                     </p>
                 </div>
                 
                 <div class="experience-item">
                     <h5>(04/2007 - 01/2008)</h5>
                     <h3>Software Developer at STONE Software Solutions GmbH</h3>
-                    <p>Entwicklung, Pflege, Wartung, Betreuung, Schulung und Kundenbetreuung der Anwendung "TMS" im Server und Client Umfeld mit 4th Dimension im PC und Mac Bereich.</p>
-                    <p class="technologies">SQL, Software Development, Full-Stack-Entwicklung, 4th Dimension</p>
+                    <p>Development, maintenance, support, training, and customer support for the "TMS" application in the server and client environment with 4th Dimension for PC and Mac.</p>
+                    <p class="technologies">SQL, software development, full-stack development, 4th Dimension</p>
                 </div>
                 
                 <div class="experience-item">
                     <h5>(11/2004 - 03/2007)</h5>
                     <h3>Software Developer at Stone Datensysteme</h3>
-                    <p>Entwicklung, Pflege, Wartung, Betreuung, Schulung und Kundenbetreuung der Anwendung "TMS" im Server und Client Umfeld mit 4th Dimension im PC und Mac Bereich.</p>
-                    <p class="technologies">SQL, Software Development, Full-Stack-Entwicklung, 4th Dimension</p>
+                    <p>Development, maintenance, support, training, and customer support for the "TMS" application in the server and client environment with 4th Dimension for PC and Mac.</p>
+                    <p class="technologies">SQL, software development, full-stack development, 4th Dimension</p>
                 </div>
                 
                 <div class="experience-item">
                     <h5>(2004 - 2006)</h5>
                     <h3>Freelancer at Empire Universe</h3>
-                    <p>Weiterentwicklung, Pflege und Wartung der Browsergames Empire Universe 1 (eingestellt)</p>
+                    <p>Further development, maintenance, and support of the browser game Empire Universe 1 (discontinued)</p>
                 </div>
                 
                 <div class="experience-item">
                     <h5>(03/2003 - 08/2003)</h5>
                     <h3>Software Developer at ISU GmbH</h3>
-                    <p>Weiterentwicklung, Wartung, Pflege und Einrichtung einer Schnittprofiloptimierungssoftware in Visual Basic. Programmierung und Steuerung von Roboterschneidanlagen.</p>
+                    <p>Further development, maintenance, and setup of a cutting profile optimization software in Visual Basic. Programming and controlling of robotic cutting machines.</p>
                 </div>
                 
                 <div class="experience-item">
                     <h5>(11/2002 - 02/2003)</h5>
                     <h3>Freelancer at ISU GmbH</h3>
-                    <p>Entwicklung, Wartung, Pflege und Einrichtung einer Schnittprofiloptimierungssoftware in Visual Basic.</p>
+                    <p>Development, maintenance, and setup of a cutting profile optimization software in Visual Basic.</p>
                 </div>
                 
                 <div class="experience-item">
                     <h5>(04/2000 - 05/2001)</h5>
                     <h3>Freelancer at  Andreas Hettich GmbH & Co. KG</h3>
-                    <p>Weiterentwicklung, Dokumentation, Pflege und Wartung einer Kundendienstsoftware in Visual Basic, Datenbank Replikation, Schnittstellenentwicklung zu AS400.</p>
+                    <p>Further development, documentation, care and maintenance of a customer service software in Visual Basic, database replication, interface development to AS400.</p>
                 </div>
                 
                 <div class="experience-item">
                     <h5>(10/1999 - 03/2000)</h5>
                     <h3>Werkstudent at  Andreas Hettich GmbH & Co. KG</h3>
-                    <p>Weiterentwicklung, Dokumentation, Pflege und Wartung einer Kundendienstsoftware in Visual Basic, Datenbank Replikation, Schnittstellenentwicklung zu AS400.</p>
+                    <p>Further development, documentation, care and maintenance of a customer service software in Visual Basic, database replication, interface development to AS400.</p>
                 </div>
                 
             </div>
@@ -165,7 +165,7 @@ export default () => `
             <div class="more-info d-flex flex-wrap align-items-center gap-5 gap-md-3" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
                 <p>Download my full CV</p>
                 <span class="line"></span>
-                <a href="/resume.pdf" class="download-cv position-relative" download>
+                <a href="https://storage.rxresu.me/clxbgu1nm003mv6lwyhrcjjta/resumes/CV (english) (long).pdf" class="download-cv position-relative" download>
                     <div class="waves-top-md">
                         <span></span>
                         <span></span>
@@ -185,8 +185,8 @@ export default () => `
     </div>
 
     <div class="col-12">
-        <a href="#projects" class="d-flex gap-4 align-items-center next-chapter">
-            <span class="page">06/11</span>
+        <a href="#how_i_work" class="d-flex gap-4 align-items-center next-chapter">
+            <span class="page">06/08</span>
             <span class="next">Next Chapter</span>
             <span class="icon"><i class="ph ph-arrow-elbow-right-down"></i></span>
         </a>

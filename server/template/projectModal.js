@@ -1,4 +1,4 @@
-export default () => `
+export default () => '' /* TODO `
 <div class="modal fade" id="project-details" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-fullscreen">
         <div class="modal-content">
@@ -116,4 +116,4 @@ export default () => `
         </div>
     </div>
 </div>
-`;
+`*/;

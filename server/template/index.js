@@ -7,9 +7,9 @@ import experiences from './main/experiences.js';
 import funFacts from './main/funFacts.js';
 import hero from './main/hero.js';
 import howIWork from './main/howIWork.js';
-import projects from './main/projects.js';
+// TODO import projects from './main/projects.js';
 import services from './main/service/index.js';
-import testimonials from './main/testimonials.js';
+// TODO import testimonials from './main/testimonials.js';
 import navigation from './navigation.js';
 import projectModal from './projectModal.js';
 
@@ -39,9 +39,9 @@ ${head()}
                 ${skills()}
                 ${funFacts()}
                 ${experiences()}
-                ${projects()}
+                ${'' /* TODO projects() */}
                 ${howIWork()}
-                ${testimonials()}
+                ${'' /* TODO testimonials() */}
                 ${contact()}
             </div>
         </div>

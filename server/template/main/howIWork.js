@@ -69,8 +69,8 @@ export default () => `
         </a>
     </div>
     <div class="col-12">
-        <a href="#testimonials" class="d-flex gap-4 align-items-center next-chapter">
-            <span class="page">08/11</span>
+        <a href="#contact" class="d-flex gap-4 align-items-center next-chapter">
+            <span class="page">07/08</span>
             <span class="next">Next Chapter</span>
             <i class="ph ph-arrow-elbow-right-down"></i>
         </a>

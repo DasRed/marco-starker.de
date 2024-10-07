@@ -20,17 +20,25 @@ export default () => `
         <li class="nav-link">
             <a href="#experience"><span>06</span> <span class="text">experiences</span> </a>
         </li>
+        ${''
+            /** TODO
+             <li class="nav-link">
+                <a href="#projects"><span>07</span> <span class="text">projects</span> </a>
+             </li>
+             */
+        }
         <li class="nav-link">
-            <a href="#projects"><span>07</span> <span class="text">projects</span> </a>
+            <a href="#how_i_work"><span>07</span> <span class="text">how i work</span> </a>
         </li>
+        ${''
+            /** TODO
+            <li class="nav-link">
+                <a href="#testimonials"><span>08</span> <span class="text">testimonials</span> </a>
+            </li>
+             */
+        }
         <li class="nav-link">
-            <a href="#how_i_work"><span>08</span> <span class="text">how i work</span> </a>
-        </li>
-        <li class="nav-link">
-            <a href="#testimonials"><span>09</span> <span class="text">testimonials</span> </a>
-        </li>
-        <li class="nav-link">
-            <a href="#contact"><span>10</span> <span class="text">contact</span> </a>
+            <a href="#contact"><span>08</span> <span class="text">contact</span> </a>
         </li>
     </ul>
     <div class="contact">

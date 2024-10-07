@@ -49,17 +49,28 @@ export default () => {
         });
 
         // attainments section
-
         gsap.from(".developer-row", {
             opacity:       0,
             scale:         0,
             duration:      1.5,
             scrollTrigger: {
-                trigger: ".design-row",
+                trigger: ".developer-row",
+                //start:   "top 60%",
+                //end:     "top 20%",
+            },
+        });
+
+        gsap.from(".architecture-row", {
+            opacity:       0,
+            scale:         0,
+            duration:      1.5,
+            scrollTrigger: {
+                trigger: ".developer-row",
                 start:   "top 60%",
                 end:     "top 20%",
             },
         });
+
         // fun fact
         gsap.from(".fun-fact", {
             scale:         0,
@@ -105,6 +116,7 @@ export default () => {
         });
 
         // services section
+        /* TODO
         gsap.from(".single-project", {
             opacity:       0,
             stagger:       0.2,
@@ -115,6 +127,7 @@ export default () => {
                 end:     "top 20%",
             },
         });
+         */
 
         // how i work
         gsap.from(".process", {
@@ -130,6 +143,7 @@ export default () => {
         });
 
         // testimonials
+        /* TODO
         gsap.from(".testimonial-card", {
             opacity:       0,
             scale:         0,
@@ -139,6 +153,7 @@ export default () => {
                 trigger: ".testimonial-card",
             },
         });
+         */
 
         // contacct
         gsap.from(".contact-item", {

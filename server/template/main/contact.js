@@ -43,11 +43,11 @@ export default () => `
         <h4>Leave a Message</h4>
         <div class="row g-4 g-xl-5">
             <div class="col-sm-6">
-                <label for="name">Name</label>
+                <label for="user_name">Name</label>
                 <input type="text" id="user_name" name="user_name" placeholder="Your name" required/>
             </div>
             <div class="col-sm-6">
-                <label for="email">Email</label>
+                <label for="user_email">Email</label>
                 <input type="email" id="user_email" name="user_email" placeholder="Your e-mail" required/>
             </div>
             <div class="col-12">
@@ -74,7 +74,7 @@ export default () => `
         </div>
     </form>
     <div class="col mt-5 pt-5 next-chapter">
-        <span class="page">11/11</span>
+        <span class="page">08/08</span>
     </div>
 </section>
 `;

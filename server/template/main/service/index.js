@@ -19,7 +19,7 @@ export default () => `
     </div>
     <div class="col-12">
         <a href="#attainments" class="d-flex gap-4 align-items-center next-chapter">
-            <span class="page">03/11</span>
+            <span class="page">03/08</span>
             <span class="next">Next Chapter</span>
 
             <i class="ph ph-arrow-elbow-right-down"></i>

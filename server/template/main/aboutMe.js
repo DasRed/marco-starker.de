@@ -43,7 +43,7 @@ export default () => `
     </div>
     <div class="col-12">
         <a href="#services" class="d-flex gap-4 align-items-center next-chapter">
-            <span class="page">02/11</span>
+            <span class="page">02/08</span>
             <span class="next">Next Chapter</span>
             <span class="icon"><i class="ph ph-arrow-elbow-right-down"></i></span>
         </a>

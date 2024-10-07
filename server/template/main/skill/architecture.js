@@ -1,5 +1,5 @@
 export default (number) => `
-<div class="row pb-120 developer-row">
+<div class="row pb-120 architecture-row">
     <div class="col-lg-4 ${number === '02' ? 'col-md-5 offset-sm-1 offset-lg-2' : ''}">
         <div class="section-title-sm">
             <div class="top">
