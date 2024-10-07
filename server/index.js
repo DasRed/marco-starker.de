@@ -4,10 +4,12 @@ import Koa from 'koa';
 import compress from 'koa-compress';
 import serve from 'koa-static';
 import path from 'path';
-import execute from '../build/execute.js';
 import template from './template/index.js';
 
-await execute();
+if (process.env.NODE_ENV !== 'production') {
+    const execute = await import('../build/execute.js');
+    await execute.default();
+}
 
 const port     = process.env.DASRED_DE_PORT ?? 7770;
 const rootPath = process.cwd();
