@@ -1,21 +1,21 @@
 {
-    "name": "@dasred/dasred.de",
+    "name": "@dasred/marco-starker.de",
     "version": "1.0.0",
     "main": "src/js/index.js",
     "type": "module",
     "author": "Marco Starker",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/DasRed/dasred.de/issues"
+        "url": "https://github.com/DasRed/marco-starker.de/issues"
     },
-    "homepage": "https://github.com/DasRed/dasred.de",
+    "homepage": "https://github.com/DasRed/marco-starker.de",
     "engines": {
         "node": ">=22.4.0",
         "npm": ">=10.8.1"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/DasRed/dasred.de.git"
+        "url": "https://github.com/DasRed/marco-starker.de.git"
     },
     "files": [
         "server/*",
