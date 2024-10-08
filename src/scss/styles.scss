@@ -1566,6 +1566,10 @@ h6 {
         &:focus {
             outline: none;
         }
+
+        &::placeholder {
+            color: var(--bs-secondary-color);
+        }
     }
 
     textarea {
