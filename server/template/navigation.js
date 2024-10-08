@@ -48,7 +48,11 @@ export default () => `
     <div class="contact">
         <a href="mailto:marco.starker@gmx.net"><i class="ph ph-at"></i> marco.starker@gmx.net</a>
         <a href="tel:+491605543322"><i class="ph ph-phone-call"></i> +49 160 5543322</a>
-        <a href="https://storage.rxresu.me/clxbgu1nm003mv6lwyhrcjjta/resumes/CV (english) (long).pdf" download><i class="ph ph-download-simple"></i> download CV</a>
+        <div class="d-flex flex-row gap-3">
+            <a href="https://storage.rxresu.me/clxbgu1nm003mv6lwyhrcjjta/resumes/CV (english) (long).pdf" download title="download CV" class="icon"><i class="ph ph-download-simple"></i></a>
+            <a href="https://github.com/DasRed" target="_blank" class="icon"><i class="ph ph-github-logo"></i></a>
+            <a href="https://www.linkedin.com/in/marco-starker-100090272/" target="_blank" class="icon"><i class="ph ph-linkedin-logo"></i></a>
+        </div>
     </div>
 </nav>
 `;
