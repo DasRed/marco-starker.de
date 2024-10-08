@@ -74,7 +74,7 @@ export default () => `
         </div>
     </form>
     <div class="col mt-5 pt-5 next-chapter">
-        <span class="page">08/08</span>
+        <span class="page">07/07</span>
     </div>
 </section>
 `;

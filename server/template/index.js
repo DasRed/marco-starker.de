@@ -6,7 +6,7 @@ import contact from './main/contact.js';
 import experiences from './main/experiences.js';
 import funFacts from './main/funFacts.js';
 import hero from './main/hero.js';
-import howIWork from './main/howIWork.js';
+// TODO import howIWork from './main/howIWork.js';
 // TODO import projects from './main/projects.js';
 import services from './main/service/index.js';
 // TODO import testimonials from './main/testimonials.js';
@@ -40,7 +40,7 @@ ${head()}
                 ${funFacts()}
                 ${experiences()}
                 ${'' /* TODO projects() */}
-                ${howIWork()}
+                ${'' /* TODO howIWork() */}
                 ${'' /* TODO testimonials() */}
                 ${contact()}
             </div>

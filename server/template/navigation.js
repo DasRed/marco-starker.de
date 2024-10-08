@@ -27,9 +27,13 @@ export default () => `
              </li>
              */
         }
-        <li class="nav-link">
-            <a href="#how_i_work"><span>07</span> <span class="text">how i work</span> </a>
-        </li>
+        ${''
+            /** TODO
+            <li class="nav-link">
+                <a href="#how_i_work"><span>07</span> <span class="text">how i work</span> </a>
+            </li>
+         */
+        }
         ${''
             /** TODO
             <li class="nav-link">
@@ -38,7 +42,7 @@ export default () => `
              */
         }
         <li class="nav-link">
-            <a href="#contact"><span>08</span> <span class="text">contact</span> </a>
+            <a href="#contact"><span>07</span> <span class="text">contact</span> </a>
         </li>
     </ul>
     <div class="contact">

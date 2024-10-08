@@ -31,7 +31,7 @@ export default () => `
         </div>
         <div class="col-12">
             <a href="#about_me" class="d-flex gap-4 align-items-center next-chapter mt-5">
-                <span class="page">01/08</span>
+                <span class="page">01/07</span>
                 <span class="next">Next Chapter</span>
                 <span class="icon"><i class="ph ph-arrow-elbow-right-down"></i></span>
             </a>
