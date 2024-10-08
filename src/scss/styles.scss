@@ -877,12 +877,29 @@ h6 {
     .fun-fact {
         position: relative;
 
+        margin-bottom: 24px;
+        padding-bottom: 24px;
+        display: flex;
+        flex-direction: column;
+
+        @include min-width(sm) {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            display: block;
+        }
+
         .numbers {
             z-index: 1;
             position: relative;
-            margin-bottom: 12px;
-            padding-bottom: 12px;
-            border-bottom: 2px solid rgb(var(--black));
+            border-bottom: 2px solid transparent;
+            order: 2;
+
+            @include min-width(sm) {
+                margin-bottom: 12px;
+                padding-bottom: 12px;
+                border-bottom: 2px solid rgb(var(--black));
+                order: initial;
+            }
 
             span {
                 transition-duration: 300ms;
@@ -915,6 +932,13 @@ h6 {
             font-size: 20px;
             font-weight: 500;
             color: rgb(var(--black));
+            border-bottom: 2px solid rgb(var(--black));
+            order: 1;
+
+            @include min-width(sm) {
+                border-bottom: 2px solid transparent;
+                order: initial;
+            }
         }
     }
 
