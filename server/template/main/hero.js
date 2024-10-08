@@ -8,7 +8,7 @@ export default () => `
                 <p class="description">based in Munich, Bavaria.</p>
             </div>
             <div class="d-flex gap-4">
-                <a href="#experience" class="btn work-btn text-capitalize btn-secondary">view my work</a>
+                <a href="#experience" class="btn work-btn text-capitalize btn-secondary">view my experiences</a>
                 <a href="#contact" class="btn contact-btn text-capitalize btn-outline-secondary">contact me</a>
             </div>
         </div>
