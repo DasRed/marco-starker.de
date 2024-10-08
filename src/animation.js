@@ -130,6 +130,7 @@ export default () => {
          */
 
         // how i work
+        /* TODO
         gsap.from(".process", {
             stagger:       0.15,
             scale:         0,
@@ -141,6 +142,7 @@ export default () => {
                 end:     "top 20%",
             },
         });
+         */
 
         // testimonials
         /* TODO
@@ -155,7 +157,7 @@ export default () => {
         });
          */
 
-        // contacct
+        // contact
         gsap.from(".contact-item", {
             scale:         0,
             duration:      0.8,

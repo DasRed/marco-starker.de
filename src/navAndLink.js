@@ -2,13 +2,19 @@ import shuffleLetters from 'shuffle-letters';
 
 function handleClassChange(mutationsList) {
     mutationsList.forEach((mutation) => {
-        if (mutation.type === "attributes" && mutation.attributeName === "class") {
-            const target = mutation.target;
-            if (target.classList.contains("active")) {
-                const textElement = target.querySelector(".text");
-                if (textElement) {
-                    shuffleLetters(textElement, {iterations: 5});
-                }
+        const target = mutation.target;
+        if (mutation.type === "attributes" && mutation.attributeName === "class" && target.classList.contains("active")) {
+            const textElement = target.querySelector(".text");
+            if (textElement) {
+                textElement.innerTextInitial ??= textElement.innerText;
+                textElement.shuffleLettersClear?.();
+                textElement.shuffleLettersClear = shuffleLetters(textElement, {
+                    iterations: 5,
+                    onComplete: () => {
+                        textElement.shuffleLettersClear = undefined;
+                        textElement.innerText           = textElement.innerTextInitial;
+                    }
+                });
             }
         }
     });
@@ -57,7 +63,6 @@ export default () => {
                 document.querySelector('header').classList.remove('shrink');
             }
             lastValue = window.scrollY;
-            console.log(window.scrollY, event);
         });
     });
 }
