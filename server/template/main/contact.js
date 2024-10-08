@@ -18,7 +18,7 @@ export default () => `
             <div class="col-sm-7 col-xl-5 col-xxl-4">
                 <div class="contact-item">
                     <div class="icon-box">
-                        <i class="ph ph-envelope-open"></i>
+                        <i class="ph ph-at"></i>
                     </div>
                     <p>marco.starker@gmx.net</p>
                 </div>

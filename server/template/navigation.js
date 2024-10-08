@@ -46,8 +46,9 @@ export default () => `
         </li>
     </ul>
     <div class="contact">
-        <a href="mailto:marco.starker@gmx.net">marco.starker@gmx.net</a>
-        <a href="tel:+491605543322">+49 160 5543322</a>
+        <a href="mailto:marco.starker@gmx.net"><i class="ph ph-at"></i> marco.starker@gmx.net</a>
+        <a href="tel:+491605543322"><i class="ph ph-phone-call"></i> +49 160 5543322</a>
+        <a href="https://storage.rxresu.me/clxbgu1nm003mv6lwyhrcjjta/resumes/CV (english) (long).pdf" download><i class="ph ph-download-simple"></i> download CV</a>
     </div>
 </nav>
 `;

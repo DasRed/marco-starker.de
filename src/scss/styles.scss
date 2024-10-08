@@ -395,7 +395,7 @@ h6 {
         gap: 8px;
 
         a {
-            font-size: 18px;
+            font-size: 16px;
             color: rgb(var(--black));
         }
     }
@@ -1062,11 +1062,15 @@ h6 {
 
         &:hover {
             background-color: #000;
-            color: #fff;
+
+            .icon {
+                color: #fff;
+            }
 
             .waves-bottom-md,
             .waves-top-md {
-                opacity: 0;
+                //opacity: 0;
+                filter: blur(2px);
             }
         }
 
@@ -1742,6 +1746,9 @@ h6 {
             animation-delay: 1.5s;
         }
     }
+}
+.waves-bottom-md, .waves-top-md, .waves-bottom, .waves-top {
+    filter: blur(1px);
 }
 
 .waves-bottom {
