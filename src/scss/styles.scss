@@ -54,7 +54,7 @@ Version: 1.0
 @import "../../node_modules/@phosphor-icons/web/src/regular/style.css";
 @import "../../node_modules/swiper/swiper.css";
 @import "../../node_modules/swiper/modules/navigation.css";
-@import "../../node_modules/swiper/modules/scrollbar.css";
+@import "../../node_modules/swiper/modules/pagination.css";
 @import "mixins.scss";
 @import "../../node_modules/glightbox/dist/css/glightbox.css";
 
@@ -668,7 +668,7 @@ h6 {
             width: 12px;
             height: 12px;
             opacity: 0.5;
-            background-color: #fff;
+            background-color: var(--bs-secondary-color);;
         }
 
         .swiper-pagination-bullet-active {
