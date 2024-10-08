@@ -12,7 +12,7 @@ export default () => `
             <a href="#services"><span>03</span> <span class="text">my services</span> </a>
         </li>
         <li class="nav-link">
-            <a href="#attainments"><span>04</span> <span class="text">skills</span> </a>
+            <a href="#skills"><span>04</span> <span class="text">skills</span> </a>
         </li>
         <li class="nav-link">
             <a href="#fun_facts"><span>05</span> <span class="text">facts</span> </a>

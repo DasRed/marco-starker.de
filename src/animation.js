@@ -48,7 +48,7 @@ export default () => {
             },
         });
 
-        // attainments section
+        // skills section
         gsap.from(".developer-row", {
             opacity:       0,
             scale:         0,

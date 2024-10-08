@@ -3,8 +3,8 @@ import developer from './developer.js';
 import language from './language.js';
 
 export default () => `
-<section id="attainments" class="attainments section position-relative">
-    <span class="section-title-overlay-text">ATTAINMENTS</span>
+<section id="skills" class="skills section position-relative">
+    <span class="section-title-overlay-text">SKILLS</span>
     
     ${[developer, architecture, language].map((fn, index) => fn(`0${index + 1}`)).join('')}
     
