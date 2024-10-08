@@ -43,4 +43,21 @@ export default () => {
         nav.classList.remove("opened");
         navIcon.classList.remove("open");
     }));
+
+    window.document.addEventListener('DOMContentLoaded', () => {
+        let lastValue = 0;
+        window.document.addEventListener('scroll', (event) => {
+            if (window.scrollY < 80) {
+                return;
+            }
+            if (window.scrollY - lastValue > 0) {
+                document.querySelector('header').classList.add('shrink');
+            }
+            else if (window.scrollY - lastValue < 0) {
+                document.querySelector('header').classList.remove('shrink');
+            }
+            lastValue = window.scrollY;
+            console.log(window.scrollY, event);
+        });
+    });
 }

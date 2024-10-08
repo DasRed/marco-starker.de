@@ -153,22 +153,36 @@ h6 {
 }
 
 .header {
-    padding: 14px 0;
+    padding-top: 14px;
+    padding-bottom: 14px;
     width: 100%;
     z-index: 10;
     left: 0;
     right: 0;
+    -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(20px);
-    // background-color: rgb(var(--primary));
     position: fixed;
+    overflow: hidden;
+
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+    transform: translateY(0);
+
+    &.shrink {
+        transform: translateY(-100%);
+        @media (min-width: 1200px) {
+            transform: none;
+        }
+    }
+
 
     .logo {
-        opacity: 0.5;
         img {
             max-width: 100%;
             border-bottom-left-radius: 40%;
             border-bottom-right-radius: 40%;
-            filter: sepia(1) opacity(0.75);
+            filter: sepia(1);
         }
         span {
             font-weight: bold;
