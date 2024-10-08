@@ -1,13 +1,10 @@
 import Typewriter from '../node_modules/typewriter-effect/dist/core.js';
 
 // typewritter effect on hero
-export default () => {
-    if (document.getElementById("typewriter")) {
-        new Typewriter("#typewriter", {
-            strings:   ["Developer", "Architect", "Fullstack", "Solver"],
-            autoStart: true,
-            loop:      true,
-            delay:     200,
-        });
-    }
-}
+export default () => document.querySelectorAll('[data-typewriter]')
+                             .forEach((element) => new Typewriter(element, {
+                                 strings:   element.getAttribute('data-typewriter').split(',').map((entry) => entry.trim()),
+                                 autoStart: true,
+                                 loop:      true,
+                                 delay:     200,
+                             }))
