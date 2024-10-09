@@ -9,9 +9,13 @@ export default () => `
         <div class="col-lg-7 col-xl-8 about-desc">
             <h2>I'm Marco Starker, a Full-Stack Developer</h2>
             <p class="desc">
-                I am a passionate and versatile full-stack developer with over a decade of experience in software development. My career encompasses extensive expertise in web applications and backend development, with a focus on technologies such as PHP, JavaScript, NodeJS, TypeScript, Docker, and AWS.
+                I am a passionate and versatile full-stack developer with over a 20 years of experience in software development. 
+                My career encompasses extensive expertise in web applications and backend development, with a focus on technologies 
+                such as PHP, JavaScript, NodeJS, TypeScript, Docker, and AWS.
 
-                I have worked on a wide range of projects, from developing dynamic websites to building complex backend systems. With my analytical mindset and deep understanding of software architecture, I can quickly identify problems and implement effective solutions that meet customer requirements. </p>
+                I have worked on a wide range of projects, from developing dynamic websites to building complex backend systems. 
+                With my analytical mindset and deep understanding of software architecture, I can quickly identify problems and 
+                implement effective solutions that meet customer requirements. </p>
             <div class="row contact">
                 <div class="col-sm-4">
                     <p>Email:</p>
