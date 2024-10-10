@@ -51,7 +51,7 @@ export default () => `
         <div class="d-flex flex-row gap-3">
             <a href="https://storage.rxresu.me/clxbgu1nm003mv6lwyhrcjjta/resumes/CV (english) (long).pdf" download title="download CV"><i class="ph ph-download-simple"></i></a>
             <a href="https://github.com/DasRed" target="_blank"><i class="ph ph-github-logo"></i></a>
-            <a href="https://www.linkedin.com/in/marco-starker-100090272/" target="_blank""><i class="ph ph-linkedin-logo"></i></a>
+            <a href="https://www.linkedin.com/in/marco-starker-100090272/" target="_blank"><i class="ph ph-linkedin-logo"></i></a>
         </div>
     </div>
 </nav>

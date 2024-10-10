@@ -32,7 +32,7 @@ export default (number) => `
             <div class="skill">
                 <div class="d-flex justify-content-between align-items-center">
                     <span>Frontend Development</span>
-                    <span>90%</span>
+                    <span>100%</span>
                 </div>
                 <div class="progress">
                     <div class="progress-bar ninety" data-width="100%"></div>
