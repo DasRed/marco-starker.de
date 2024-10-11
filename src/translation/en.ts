@@ -282,6 +282,8 @@ export default <MS.Translation>{
             messageLabel: 'Message',
             messagePlaceholder: 'Your message',
             submit: 'submit',
+            sending: 'Sending...',
+            success: 'Success',
         }
     }
 };

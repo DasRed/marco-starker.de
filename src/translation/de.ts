@@ -26,7 +26,7 @@ export default <MS.Translation>{
 
     hero: {
         freelancer:    'HEY, I BIN EIN FREELANCER',
-        typewriter:    'Developer, Architect, Fullstack Dev, Problemlöser',
+        typewriter:    'Developer, Architekt, Fullstack Dev, Problemlöser',
         description:   'mit Sitz in München, Bayern.',
         btnExperience: 'meine Erfahrungen ansehen',
         btnContact:    'Kontakt aufnehmen',
@@ -278,6 +278,8 @@ export default <MS.Translation>{
             messageLabel: 'Nachricht',
             messagePlaceholder: 'deine Nachricht',
             submit: 'Senden',
+            sending: 'Senden...',
+            success: 'Versendet',
         }
     }
 };

@@ -10,11 +10,11 @@ import testimonial from './testimonial.js';
 import typewriter from './typewriter.js';
 
 navAndLink();
-typewriter();
-service();
-testimonial();
-skill();
+typewriter();// done
+service();// done
+testimonial();// done
+skill(); // done
 animation();
-shakyBoxes();
-project();
-contact();
+shakyBoxes(); // done
+project(); // done
+contact(); // done

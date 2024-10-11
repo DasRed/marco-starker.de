@@ -9,8 +9,8 @@ type BackendProps = MS.ComponentParameter & {
 };
 
 export default function Card({id, number, language, trTitle, trList}: BackendProps) {
+//    <div className="swiper-slide overflow-visible p-3" data-content={id}>
     return (
-        <div className="swiper-slide overflow-visible p-3" data-content={id}>
             <div className="service-card">
                 <div className="card-inner"></div>
                 <div className="content">
@@ -31,10 +31,9 @@ export default function Card({id, number, language, trTitle, trList}: BackendPro
                     </div>
                     <h4>{__t(language, trTitle)}</h4>
                     <ul className="service-list">
-                        {trList.map((tr) => (<li><i className="ph ph-caret-double-right"></i> {__t(language, tr)}</li>))}
+                        {trList.map((tr) => (<li key={tr}><i className="ph ph-caret-double-right"></i> {__t(language, tr)}</li>))}
                     </ul>
                 </div>
             </div>
-        </div>
     );
 }

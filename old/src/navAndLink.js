@@ -22,18 +22,18 @@ function handleClassChange(mutationsList) {
 
 export default () => {
     const navIcon = document.querySelector(".nav-icon");
-    const nav     = document.querySelector(".navigation");
-
-    navIcon && navIcon.addEventListener("click", () => {
-        navIcon.classList.toggle("open");
-        nav.classList.toggle("opened");
-    });
-
-    const navOverlay = document.querySelector(".nav-overlay");
-    navOverlay && navOverlay.addEventListener("click", () => {
-        nav.classList.remove("opened");
-        navIcon.classList.remove("open");
-    });
+    //const nav     = document.querySelector(".navigation");
+    //
+    //navIcon && navIcon.addEventListener("click", () => {
+    //    navIcon.classList.toggle("open");
+    //    nav.classList.toggle("opened");
+    //});
+    //
+    //const navOverlay = document.querySelector(".nav-overlay");
+    //navOverlay && navOverlay.addEventListener("click", () => {
+    //    nav.classList.remove("opened");
+    //    navIcon.classList.remove("open");
+    //});
 
     // Select all the <a> elements you want to observe
     const links = document.querySelectorAll(".navigation ul li a");
@@ -45,24 +45,24 @@ export default () => {
     links.forEach((link) => observer.observe(link, {attributes: true}));
 
     // close menu on link click
-    links.forEach((link) => link.addEventListener("click", () => {
-        nav.classList.remove("opened");
-        navIcon.classList.remove("open");
-    }));
-
-    window.document.addEventListener('DOMContentLoaded', () => {
-        let lastValue = 0;
-        window.document.addEventListener('scroll', (event) => {
-            if (window.scrollY < 80) {
-                return;
-            }
-            if (window.scrollY - lastValue > 0) {
-                document.querySelector('header').classList.add('shrink');
-            }
-            else if (window.scrollY - lastValue < 0) {
-                document.querySelector('header').classList.remove('shrink');
-            }
-            lastValue = window.scrollY;
-        });
-    });
+    //links.forEach((link) => link.addEventListener("click", () => {
+    //    nav.classList.remove("opened");
+    //    navIcon.classList.remove("open");
+    //}));
+    //
+    //window.document.addEventListener('DOMContentLoaded', () => {
+    //    let lastValue = 0;
+    //    window.document.addEventListener('scroll', (event) => {
+    //        if (window.scrollY < 80) {
+    //            return;
+    //        }
+    //        if (window.scrollY - lastValue > 0) {
+    //            document.querySelector('header').classList.add('shrink');
+    //        }
+    //        else if (window.scrollY - lastValue < 0) {
+    //            document.querySelector('header').classList.remove('shrink');
+    //        }
+    //        lastValue = window.scrollY;
+    //    });
+    //});
 }

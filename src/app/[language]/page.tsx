@@ -1,3 +1,6 @@
+'use client';
+
+import React, {MouseEvent, useEffect} from 'react';
 import AboutMe from '../../component/AboutMe';
 import Contact from '../../component/Contact';
 import Experience from '../../component/Experience';
@@ -14,7 +17,25 @@ import Circle from '../../component/skill/Circle';
 import Progress from '../../component/skill/Progress';
 import MS from '../../index';
 
+function outlineNumbers(event: MouseEvent): void {
+    const numberOutlineOne = document.querySelectorAll('.number-outline-one') as NodeListOf<HTMLElement>;
+    const numberOutlineTwo = document.querySelectorAll('.number-outline-two') as NodeListOf<HTMLElement>;
+
+    const offsetX = (event.clientX - window.innerWidth / 2) * 0.01;
+    const offsetY = (event.clientY - window.innerHeight / 2) * 0.01;
+
+    numberOutlineOne.forEach((element: HTMLElement) => element.style.transform = `translate(${offsetX / 2}px, ${offsetY / 2}px)`);
+    numberOutlineTwo.forEach((element: HTMLElement) => element.style.transform = `translate(${offsetX}px, ${offsetY}px)`);
+}
+
 export default function Home({params: {language}}: MS.PageParameter) {
+    useEffect(() => {
+        // @ts-ignore
+        document.addEventListener('mousemove', outlineNumbers);
+        // @ts-ignore
+        return () => document.removeEventListener('mousemove', outlineNumbers);
+    });
+
     return (
         <>
             <Section id="hero" index={1} count={7} next="about" language={language}>
@@ -31,7 +52,7 @@ export default function Home({params: {language}}: MS.PageParameter) {
                     <Card id="frontend" number={2} trTitle="service.frontend.title" language={language} trList={['service.frontend.list1', 'service.frontend.list2', 'service.frontend.list3', 'service.frontend.list4', 'service.frontend.list5']}/>
                     <Card id="devops" number={3} trTitle="service.devops.title" language={language} trList={['service.devops.list1', 'service.devops.list2', 'service.devops.list3', 'service.devops.list4', 'service.devops.list5']}/>
                     <Card id="architecture" number={4} trTitle="service.architecture.title" language={language} trList={['service.architecture.list1', 'service.architecture.list2', 'service.architecture.list3', 'service.architecture.list4', 'service.architecture.list5']}/>
-                    <Card id="project" number={4} trTitle="service.project.title" language={language} trList={['service.project.list1', 'service.project.list2', 'service.project.list3', 'service.project.list4', 'service.project.list5']}/>
+                    <Card id="project" number={5} trTitle="service.project.title" language={language} trList={['service.project.list1', 'service.project.list2', 'service.project.list3', 'service.project.list4', 'service.project.list5']}/>
                 </Service>
             </Section>
 

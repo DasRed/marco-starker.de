@@ -29,6 +29,9 @@ declare module MS {
         MS_GITHUB?: string;
         MS_EMAIL?: string;
         MS_MOBILE?: string;
+        MS_EMAILJS_PUBLIC_KEY?: string;
+        MS_EMAILJS_SERVICE_ID?: string;
+        MS_EMAILJS_TEMPLATE_ID?: string;
     };
 
     type Config = {
@@ -43,7 +46,11 @@ declare module MS {
         resume: { [key: string]: string; };
         linkedIn: string;
         github: string;
-
+        emailJs: {
+            publicKey: string;
+            serviceId: string;
+            templateId: string;
+        }
     };
 }
 export default MS;

@@ -7,14 +7,19 @@ import Link from 'next/link'
 
 const LINKS = ['#hero', '#about', '#services', '#skills', '#fun_facts', '#experience', '#contact'];
 
-export default function Navigation({language}: MS.ComponentParameter) {
+type NavigationProps = {
+    open: boolean;
+    setOpen: Function
+} & MS.ComponentParameter;
+
+export default function Navigation({language, open, setOpen}: NavigationProps) {
     return (
-        <nav className="navigation" id="navigation">
+        <nav id="navigation" className={`navigation ${open ? 'opened' : ''}`}>
             <Image src={logo} className="mb-4 d-xl-none" alt={__t(language, 'logo')} /><span>{__t(language, 'name.full')}</span>
             <ul>
                 {LINKS.map((LINK, index) => (
                     <li key={LINK} className="nav-link">
-                        <Link href={LINK} className={index === 0 ? 'active': ''}>
+                        <Link href={LINK} className={index === 0 ? 'active': ''} onClick={() => setOpen(false)}>
                             <span>0{index + 1}</span> <span className="text">{__t(language, `navigation.${LINK}`)}</span>
                         </Link>
                     </li>

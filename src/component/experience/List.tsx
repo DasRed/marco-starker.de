@@ -9,7 +9,7 @@ type ListProps = {
 export default function List({language, trKeys}: ListProps) {
     return (
         <ul className="service-list">
-            {trKeys.map((trKey) => (<li><i className="ph ph-caret-double-right"></i> {__t(language, trKey)}</li>))}
+            {trKeys.map((trKey) => (<li key={trKey}><i className="ph ph-caret-double-right"></i> {__t(language, trKey)}</li>))}
         </ul>
     );
 }

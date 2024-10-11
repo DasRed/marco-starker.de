@@ -1,7 +1,34 @@
+'use client';
+
+import emailjs from '@emailjs/browser';
 import Link from 'next/link';
+import {FormEvent} from 'react';
 import config from '../config';
 import MS from '../index';
 import __t from '../translation';
+
+emailjs.init(config.emailJs.publicKey);
+
+async function sendEmail(language: string, event: FormEvent) {
+    event.preventDefault();
+
+    const elementForm   = event.currentTarget as HTMLFormElement;
+    const elementSubmit = elementForm.querySelector('#submit-btn') as HTMLButtonElement;
+    if (elementSubmit === null) {
+        return;
+    }
+
+    elementSubmit.innerText = __t(language, 'contact.form.sending');
+    try {
+        await emailjs.sendForm(config.emailJs.serviceId, config.emailJs.templateId, elementForm);
+        elementForm.reset();
+        elementSubmit.innerText = __t(language, 'contact.form.success');
+        setTimeout(() => elementSubmit.innerHTML = __t(language, 'contact.form.submit'), 3000);
+    }
+    catch (error) {
+        console.log("FAILED...", error);
+    }
+}
 
 export default function Contact({language}: MS.ComponentParameter) {
     return (
@@ -45,7 +72,7 @@ export default function Contact({language}: MS.ComponentParameter) {
                     </div>
                 </div>
             </div>
-            <form id="contact-form" className="contact-form">
+            <form id="contact-form" className="contact-form" onSubmit={(event: FormEvent) => sendEmail(language, event)}>
                 <h4>{__t(language, 'contact.form.title')}</h4>
                 <div className="row g-4 g-xl-5">
                     <div className="col-sm-6">

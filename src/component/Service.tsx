@@ -1,4 +1,6 @@
 import React from 'react';
+import {Autoplay, Pagination} from 'swiper/modules';
+import {Swiper, SwiperSlide} from 'swiper/react';
 import MS from '../index';
 import __t from '../translation';
 
@@ -16,7 +18,33 @@ export default function Service({language, children}: ServiceProps) {
             </div>
             <div className="swiper service-swiper">
                 <div className="swiper-wrapper">
-                    {children}
+                    <Swiper
+                        modules={[Pagination, Autoplay]}
+                        slidesPerView={1}
+                        spaceBetween={24}
+                        loop={true}
+                        autoplay={{delay: 5000}}
+                        pagination={{
+                            el:        '.swiper-pagination',
+                            clickable: true,
+                        }}
+                        breakpoints={{
+                            768:  {
+                                slidesPerView: 2,
+                                spaceBetween:  24,
+                            },
+                            1550: {
+                                slidesPerView: 2.5,
+                                spaceBetween:  24,
+                            },
+                        }}
+                    >
+                        {React.Children.map(children, (child) => (
+                            <SwiperSlide className="swiper-slide overflow-visible p-3">
+                                {child}
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
                 </div>
                 <div className="swiper-pagination"></div>
             </div>

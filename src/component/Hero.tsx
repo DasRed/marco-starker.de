@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link'
 import MS from '../index';
 import __t from '../translation';
+import Typewriter from 'typewriter-effect';
 
 export default function Hero({language}: MS.ComponentParameter) {
     return (
@@ -10,7 +11,14 @@ export default function Hero({language}: MS.ComponentParameter) {
             <div className="col-12 col-md-6 col-xl-7 hero-content">
                 <div>
                     <h4 className="text-uppercase freelancer">{__t(language, 'hero.freelancer')}</h4>
-                    <h1 className="text-uppercase overflow-hidden developer" id="typewriter" data-typewriter={__t(language, 'hero.typewriter')}></h1>
+                    <h1 className="text-uppercase overflow-hidden developer" id="typewriter">
+                        <Typewriter options={{
+                            strings: __t(language, 'hero.typewriter').split(',').map((entry) => entry.trim()),
+                            autoStart: true,
+                            loop:      true,
+                            delay:     200,
+                        }}></Typewriter>
+                    </h1>
                     <p className="description">{__t(language, 'hero.description')}</p>
                 </div>
                 <div className="d-flex gap-4">
