@@ -30,18 +30,18 @@ type UseScrollspyParameters<Id extends string> = {
      */
     throttleMs?: number;
 
-    onActivate?(element: Element): void
+    onActivate?(element: Element, id: Id, index: number): void
 }
 
 export const useScrollspy = <Id extends string>({ids, selectors, offset = 0, activeClass = 'active-scrollspy-item', initialId = ids[0], throttleMs = 250, onActivate = () => undefined}: UseScrollspyParameters<Id>): Id => {
     const [activeId, setActiveId] = useState<Id>(initialId);
     const {height}                = useWindowSize();
 
-    const applyActiveClass = (selector: string) => {
+    const applyActiveClass = (selector: string, id: Id, index: number) => {
         const elements = document.querySelectorAll(selector);
         elements?.forEach((element) => {
             element.classList.add(activeClass);
-            onActivate(element);
+            onActivate(element, id, index);
         });
     }
 
@@ -66,12 +66,12 @@ export const useScrollspy = <Id extends string>({ids, selectors, offset = 0, act
         const {top, bottom} = section.getBoundingClientRect();
         if (typeof offset === 'number' && top + offset < 0 && bottom + offset > 0) {
             setActiveId(id);
-            applyActiveClass(selector);
+            applyActiveClass(selector, id, index);
         }
 
         if (offset === 'topCenter' && top <= height / 2 && bottom > height / 2) {
             setActiveId(id);
-            applyActiveClass(selector);
+            applyActiveClass(selector, id, index);
         }
     }), throttleMs);
 

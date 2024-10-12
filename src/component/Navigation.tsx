@@ -1,4 +1,3 @@
-import logo from './logo.png';
 import {useGSAP} from '@gsap/react';
 import gsap from 'gsap';
 import Image from 'next/image';
@@ -10,6 +9,7 @@ import config from '../config';
 import MS from '../index';
 import __t from '../translation';
 import {useScrollspy} from '../useScrollspy';
+import logo from './logo.png';
 
 const LINKS = ['hero', 'about', 'services', 'skills', 'fun_facts', 'experience', 'contact'];
 
@@ -26,20 +26,16 @@ export default function Navigation({language, open, setOpen}: NavigationProps) {
         selectors:   LINKS.map((LINK) => `.nav-link > a[href="#${LINK}"]`),
         offset:      'topCenter',
         activeClass: 'active',
-        onActivate:  (element: Element) => {
-            const textElement = element.querySelector('.text') as HTMLElement & { innerTextInitial?: string; shuffleLettersClear?: () => void };
+        onActivate:  (element: Element, LINK: string) => {
+            const textElement = element.querySelector('.text') as HTMLElement & { shuffleLettersClear?: () => void };
             if (textElement === null) {
                 return;
             }
 
-            textElement.innerTextInitial ??= textElement.innerText;
             textElement.shuffleLettersClear?.();
             textElement.shuffleLettersClear = shuffleLetters(textElement, {
                 iterations: 5,
-                onComplete: () => {
-                    textElement.shuffleLettersClear = undefined;
-                    textElement.innerText           = textElement.innerTextInitial ?? '';
-                }
+                onComplete: () => textElement.innerText = __t(language, `navigation.${LINK}`)
             });
         }
     });
