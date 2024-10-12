@@ -1,6 +1,6 @@
 {
     "name": "@dasred/marco-starker.de",
-    "version": "1.1.2",
+    "version": "1.1.3",
     "main": "src/js/index.js",
     "type": "module",
     "author": "Marco Starker",
