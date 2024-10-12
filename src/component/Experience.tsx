@@ -1,13 +1,69 @@
-import React from 'react';
+import {useGSAP} from '@gsap/react';
+import gsap from 'gsap';
+import ScrollTrigger from 'gsap/ScrollTrigger';
+import React, {useRef} from 'react';
 import config from '../config';
 import MS from '../index';
 import __t from '../translation';
+import DOMTarget = gsap.DOMTarget;
 
 type ExperienceProps = MS.ComponentParameter & {
     children: React.ReactNode;
 };
 
 export default function Experience({language, children}: ExperienceProps) {
+    const container = useRef(null);
+
+    useGSAP(() => {
+        const element = container.current as HTMLElement | null;
+        if (element === null) {
+            return;
+        }
+
+        gsap.registerPlugin(ScrollTrigger);
+        element.style.visibility = 'initial';
+        gsap.from('.experience-item', {
+            opacity:       0,
+            duration:      1,
+            stagger:       0.5,
+            scale:         0,
+            scrollTrigger: {
+                trigger: '.experience-item',
+            },
+        });
+
+        gsap.utils.toArray('.experience-item').forEach((item) => gsap.to(item as Object, {
+            '--item-height': '100%',
+            stagger:         0.5,
+            delay:           0.5,
+            scrollTrigger:   {
+                trigger: item as DOMTarget,
+                start:   'top 80%',
+                end:     'top 20%',
+            },
+        }));
+
+        gsap.to(element, {
+            duration:      2,
+            ease:          'back',
+            delay:         0.5,
+            '--height':    '100%',
+            scrollTrigger: {
+                trigger: element,
+            },
+        });
+
+        gsap.from('.more-info', {
+            scale:         0,
+            duration:      1.2,
+            ease:          'elastic',
+            delay:         0.5,
+            scrollTrigger: {
+                trigger: '.more-info',
+            },
+        });
+    }, {scope: container});
+
     return (
         <>
             <span className="section-title-overlay-text">{__t(language, 'experience.overlay')}</span>
@@ -16,7 +72,7 @@ export default function Experience({language, children}: ExperienceProps) {
                 <h2>{__t(language, 'experience.title2')}</h2>
             </div>
             <div className="row">
-                <div className="col-lg-10 col-xl-8">
+                <div ref={container} className="col-lg-10 col-xl-8" style={{visibility: 'hidden'}}>
                     <div className="experience-wrapper d-flex flex-column">
                         {children}
                     </div>

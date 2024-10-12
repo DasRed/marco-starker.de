@@ -1,13 +1,33 @@
 import hero from '/public/hero.png';
+import {useGSAP} from '@gsap/react';
+import gsap from 'gsap';
+import ScrollTrigger from 'gsap/ScrollTrigger';
 import Image from 'next/image';
 import Link from 'next/link'
+import {useRef} from 'react';
 import MS from '../index';
 import __t from '../translation';
 import Typewriter from 'typewriter-effect';
 
 export default function Hero({language}: MS.ComponentParameter) {
+    const container = useRef(null);
+
+    useGSAP(() => {
+        const element = container.current as HTMLElement|null;
+        if (element === null) {
+            return;
+        }
+
+        element.style.visibility = 'initial';
+        gsap.from('.img-wrapper', {duration: 1.5, scale: 1.5, ease: 'back', delay: 0.3, opacity: 0});
+        gsap.from('.work-btn', {duration: 1.2, scale: 0, opacity: 0, ease: "bounce"});
+        gsap.from('.contact-btn', {duration: 1.2, scale: 0, opacity: 0, ease: "bounce"});
+        gsap.from('.freelancer', {duration: 0.8, y: 200, scale: 0});
+        gsap.from('.description', {duration: 0.8, y: 200, scale: 0});
+    }, {scope: container});
+
     return (
-        <div className="row gx-4 align-items-center">
+        <div ref={container} className="row gx-4 align-items-center" style={{visibility: 'hidden'}}>
             <div className="col-12 col-md-6 col-xl-7 hero-content">
                 <div>
                     <h4 className="text-uppercase freelancer">{__t(language, 'hero.freelancer')}</h4>

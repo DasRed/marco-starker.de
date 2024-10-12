@@ -1,5 +1,8 @@
+import {useGSAP} from '@gsap/react';
+import gsap from 'gsap';
+import ScrollTrigger from 'gsap/ScrollTrigger';
 import Link from 'next/link';
-import React from 'react';
+import React, {useRef} from 'react';
 import MS from '../index';
 import __t from '../translation';
 import Conditional from './Conditional';
@@ -13,8 +16,52 @@ type SectionProps = {
 } & MS.ComponentParameter;
 
 export default function Section({id, index, count, next, language, children}: SectionProps) {
+    const container = useRef(null);
+
+    useGSAP(() => {
+        const element = container.current as HTMLElement | null;
+        if (element === null || element.querySelector('.section-title-overlay-text') === null) {
+            return;
+        }
+
+        gsap.registerPlugin(ScrollTrigger);
+
+        const elementOverlay = element.querySelector('.section-title-overlay-text');
+        if (elementOverlay !== null) {
+            gsap.fromTo(elementOverlay, {y: '50%'}, {
+                y:             '-50%',
+                scrollTrigger: {
+                    trigger: element,
+                    start:   'top bottom',
+                    end:     'bottom top',
+                    scrub:   true,
+                },
+            });
+        }
+
+        const elementTitle = element.querySelector('.section-title');
+        if (elementTitle !== null) {
+            gsap.to(elementTitle, {
+                '--height':    '100%',
+                delay:         0.5,
+                scrollTrigger: {
+                    trigger: elementTitle,
+                    start:   'top 80%',
+                },
+            });
+
+            gsap.from(elementTitle, {
+                opacity:       0,
+                scale:         0,
+                scrollTrigger: {
+                    trigger: elementTitle,
+                },
+            });
+        }
+    }, {scope: container});
+
     return (
-        <section id={id} className={`section position-relative ${id}`}>
+        <section id={id} ref={container} className={`section position-relative ${id}`}>
             {children}
 
             <Conditional when={!!next}>

@@ -9,7 +9,6 @@ type BackendProps = MS.ComponentParameter & {
 };
 
 export default function Card({id, number, language, trTitle, trList}: BackendProps) {
-//    <div className="swiper-slide overflow-visible p-3" data-content={id}>
     return (
             <div className="service-card">
                 <div className="card-inner"></div>

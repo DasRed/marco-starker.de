@@ -1,8 +1,11 @@
 'use client';
 
 import emailjs from '@emailjs/browser';
+import {useGSAP} from '@gsap/react';
+import gsap from 'gsap';
+import ScrollTrigger from 'gsap/ScrollTrigger';
 import Link from 'next/link';
-import {FormEvent} from 'react';
+import {FormEvent, useRef} from 'react';
 import config from '../config';
 import MS from '../index';
 import __t from '../translation';
@@ -31,6 +34,26 @@ async function sendEmail(language: string, event: FormEvent) {
 }
 
 export default function Contact({language}: MS.ComponentParameter) {
+    const container = useRef(null);
+
+    useGSAP(() => {
+        const element = container.current as HTMLElement | null;
+        if (element === null) {
+            return;
+        }
+
+        gsap.registerPlugin(ScrollTrigger);
+        element.style.visibility = 'initial';
+        gsap.from('.contact-item', {
+            scale:         0,
+            duration:      0.8,
+            ease:          'back',
+            scrollTrigger: {
+                trigger: element,
+            },
+        });
+    }, {scope: container});
+
     return (
         <>
             <span className="section-title-overlay-text">{__t(language, 'contact.overlay')}</span>
@@ -38,7 +61,7 @@ export default function Contact({language}: MS.ComponentParameter) {
                 <h4>{__t(language, 'contact.title1')}</h4>
                 <h2>{__t(language, 'contact.title2')}</h2>
             </div>
-            <div className="row pb-120 contact-items">
+            <div ref={container} className="row pb-120 contact-items" style={{visibility: 'hidden'}}>
                 <div className="row g-4">
                     <div className="col-sm-6 col-xl-4 col-xxl-3">
                         <div className="contact-item">

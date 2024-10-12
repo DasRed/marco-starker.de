@@ -8,13 +8,13 @@ export default <MS.Translation>{
     logo: 'Bild von Marco Starker',
 
     navigation: {
-        '#hero':        'Start',
-        '#about':      'Über mich',
-        '#services':   'Meine Dienstleistungen',
-        '#skills':     'Fähigkeiten',
-        '#fun_facts':  'Fakten',
-        '#experience': 'Erfahrungen',
-        '#contact':    'Kontakt',
+        hero:       'Start',
+        about:      'Über mich',
+        services:   'Meine Dienstleistungen',
+        skills:     'Fähigkeiten',
+        fun_facts:  'Fakten',
+        experience: 'Erfahrungen',
+        contact:    'Kontakt',
     },
 
     resume: {
@@ -265,21 +265,21 @@ export default <MS.Translation>{
     },
 
     contact: {
-        overlay: 'KONTAKT',
-        title1:  'Lass uns in Kontakt treten',
-        title2:  'Kontaktiere mich',
+        overlay:  'KONTAKT',
+        title1:   'Lass uns in Kontakt treten',
+        title2:   'Kontaktiere mich',
         location: '85256 Vierkirchen, Deutschland',
-        form: {
-            title: 'Eine Nachricht hinterlassen',
-            nameLabel: 'Name',
-            namePlaceholder: 'dein Name',
-            emailLabel: 'Email',
-            emailPlaceholder: 'deine Emailadresse',
-            messageLabel: 'Nachricht',
+        form:     {
+            title:              'Eine Nachricht hinterlassen',
+            nameLabel:          'Name',
+            namePlaceholder:    'dein Name',
+            emailLabel:         'Email',
+            emailPlaceholder:   'deine Emailadresse',
+            messageLabel:       'Nachricht',
             messagePlaceholder: 'deine Nachricht',
-            submit: 'Senden',
-            sending: 'Senden...',
-            success: 'Versendet',
+            submit:             'Senden',
+            sending:            'Senden...',
+            success:            'Versendet',
         }
     }
 };

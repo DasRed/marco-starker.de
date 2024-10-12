@@ -1,4 +1,7 @@
-import React from 'react';
+import {useGSAP} from '@gsap/react';
+import gsap from 'gsap';
+import ScrollTrigger from 'gsap/ScrollTrigger';
+import React, {useRef} from 'react';
 import {Autoplay, Pagination} from 'swiper/modules';
 import {Swiper, SwiperSlide} from 'swiper/react';
 import MS from '../index';
@@ -9,6 +12,29 @@ type ServiceProps = MS.ComponentParameter & {
 };
 
 export default function Service({language, children}: ServiceProps) {
+    const container = useRef(null);
+
+    useGSAP(() => {
+        const element = container.current as HTMLElement | null;
+        if (element === null) {
+            return;
+        }
+
+        gsap.registerPlugin(ScrollTrigger);
+        element.style.visibility = 'initial';
+        gsap.from('.service-card', {
+            y:             500,
+            stagger:       0.2,
+            scale:         0,
+            duration:      1.5,
+            scrollTrigger: {
+                trigger: element,
+                start:   'top 60%',
+                end:     'top 20%',
+            },
+        });
+    }, {scope: container});
+
     return (
         <>
             <span className="section-title-overlay-text">{__t(language, 'service.overlay')}</span>
@@ -16,7 +42,7 @@ export default function Service({language, children}: ServiceProps) {
                 <h4>{__t(language, 'service.title1')}</h4>
                 <h2>{__t(language, 'service.title2')}</h2>
             </div>
-            <div className="swiper service-swiper">
+            <div ref={container} className="swiper service-swiper" style={{visibility: 'hidden'}}>
                 <div className="swiper-wrapper">
                     <Swiper
                         modules={[Pagination, Autoplay]}

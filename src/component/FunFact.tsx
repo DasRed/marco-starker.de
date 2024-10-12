@@ -1,10 +1,33 @@
-import React from 'react';
+import {useGSAP} from '@gsap/react';
+import gsap from 'gsap';
+import ScrollTrigger from 'gsap/ScrollTrigger';
+import React, {useRef} from 'react';
 import MS from '../index';
 import __t from '../translation';
 
 export default function FunFact({language}: MS.ComponentParameter) {
+    const container = useRef(null);
+
+    useGSAP(() => {
+        const element = container.current as HTMLElement | null;
+        if (element === null) {
+            return;
+        }
+
+        gsap.registerPlugin(ScrollTrigger);
+        element.style.visibility = 'initial';
+        gsap.from('.fun-fact', {
+            scale:         0,
+            duration:      1,
+            stagger:       0.2,
+            scrollTrigger: {
+                trigger: '.fun-fact',
+            },
+        });
+    }, {scope: container});
+
     return (
-        <>
+        <div ref={container} style={{visibility: 'hidden'}}>
             <span className="section-title-overlay-text">{__t(language, 'funFact.overlay')}</span>
             <div className="section-title text-capitalize">
                 <h4>{__t(language, 'funFact.title1')}</h4>
@@ -54,6 +77,6 @@ export default function FunFact({language}: MS.ComponentParameter) {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     );
 }

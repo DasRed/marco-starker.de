@@ -9,12 +9,12 @@ import skill from './skill.js';
 import testimonial from './testimonial.js';
 import typewriter from './typewriter.js';
 
-navAndLink();
+navAndLink();// done
 typewriter();// done
 service();// done
 testimonial();// done
 skill(); // done
-animation();
+animation();// done
 shakyBoxes(); // done
 project(); // done
 contact(); // done

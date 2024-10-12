@@ -12,13 +12,13 @@ export default <MS.Translation>{
     logo: 'picture from Marco Starker',
 
     navigation: {
-        '#hero':       'top',
-        '#about':      'about me',
-        '#services':   'my services',
-        '#skills':     'skills',
-        '#fun_facts':  'fun facts',
-        '#experience': 'experiences',
-        '#contact':    'contact',
+        hero:       'top',
+        about:      'about me',
+        services:   'my services',
+        skills:     'skills',
+        fun_facts:  'fun facts',
+        experience: 'experiences',
+        contact:    'contact',
     },
 
     resume: {
@@ -269,21 +269,21 @@ export default <MS.Translation>{
     },
 
     contact: {
-        overlay: 'CONTACT',
-        title1:  'Let\'s get in touch',
-        title2:  'Contact me',
+        overlay:  'CONTACT',
+        title1:   'Let\'s get in touch',
+        title2:   'Contact me',
         location: '85256 Vierkirchen, Germany',
-        form: {
-            title: 'Leave a Message',
-            nameLabel: 'Name',
-            namePlaceholder: 'Your name',
-            emailLabel: 'Email',
-            emailPlaceholder: 'Your e-mail',
-            messageLabel: 'Message',
+        form:     {
+            title:              'Leave a Message',
+            nameLabel:          'Name',
+            namePlaceholder:    'Your name',
+            emailLabel:         'Email',
+            emailPlaceholder:   'Your e-mail',
+            messageLabel:       'Message',
             messagePlaceholder: 'Your message',
-            submit: 'submit',
-            sending: 'Sending...',
-            success: 'Success',
+            submit:             'submit',
+            sending:            'Sending...',
+            success:            'Success',
         }
     }
 };

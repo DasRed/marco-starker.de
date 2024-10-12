@@ -1,5 +1,7 @@
 'use client';
 
+import {useGSAP} from '@gsap/react';
+import gsap from 'gsap';
 import React, {MouseEvent, useEffect} from 'react';
 import AboutMe from '../../component/AboutMe';
 import Contact from '../../component/Contact';
@@ -15,7 +17,10 @@ import Card from '../../component/service/Card';
 import Skill from '../../component/Skill';
 import Circle from '../../component/skill/Circle';
 import Progress from '../../component/skill/Progress';
+import Skills from '../../component/Skills';
 import MS from '../../index';
+
+gsap.registerPlugin(useGSAP);
 
 function outlineNumbers(event: MouseEvent): void {
     const numberOutlineOne = document.querySelectorAll('.number-outline-one') as NodeListOf<HTMLElement>;
@@ -57,38 +62,40 @@ export default function Home({params: {language}}: MS.PageParameter) {
             </Section>
 
             <Section id="skills" index={4} count={7} next="fun_facts" language={language}>
-                <Skill id="developer" number={1} trTitle="skill.developer.title" trSubTitle="skill.developer.subTitle" language={language}>
-                    <Progress language={language} entries={[
-                        {trTitle: 'skill.developer.fullStack', percent: 100},
-                        {trTitle: 'skill.developer.backend', percent: 100},
-                        {trTitle: 'skill.developer.frontend', percent: 90},
-                        {trTitle: 'skill.developer.php', percent: 100},
-                        {trTitle: 'skill.developer.nodeJs', percent: 100},
-                        {trTitle: 'skill.developer.javaScript', percent: 100},
-                        {trTitle: 'skill.developer.typeScript', percent: 60},
-                        {trTitle: 'skill.developer.reactJs', percent: 40},
-                    ]}/>
-                </Skill>
+                <Skills language={language}>
+                    <Skill id="developer" number={1} trTitle="skill.developer.title" trSubTitle="skill.developer.subTitle" language={language}>
+                        <Progress language={language} entries={[
+                            {trTitle: 'skill.developer.fullStack', percent: 100},
+                            {trTitle: 'skill.developer.backend', percent: 100},
+                            {trTitle: 'skill.developer.frontend', percent: 90},
+                            {trTitle: 'skill.developer.php', percent: 100},
+                            {trTitle: 'skill.developer.nodeJs', percent: 100},
+                            {trTitle: 'skill.developer.javaScript', percent: 100},
+                            {trTitle: 'skill.developer.typeScript', percent: 60},
+                            {trTitle: 'skill.developer.reactJs', percent: 40},
+                        ]}/>
+                    </Skill>
 
-                <Skill id="architecture" number={2} trTitle="skill.architecture.title" trSubTitle="skill.architecture.subTitle" language={language}>
-                    <Progress language={language} entries={[
-                        {trTitle: 'skill.architecture.microservices', percent: 100},
-                        {trTitle: 'skill.architecture.CI_CD', percent: 100},
-                        {trTitle: 'skill.architecture.AWS', percent: 80},
-                        {trTitle: 'skill.architecture.webServices', percent: 100},
-                        {trTitle: 'skill.architecture.docker', percent: 100},
-                        {trTitle: 'skill.architecture.SQL_NoSQL', percent: 70},
-                        {trTitle: 'skill.architecture.softwareArchitecture', percent: 100},
-                        {trTitle: 'skill.architecture.terraform', percent: 20},
-                    ]}/>
-                </Skill>
+                    <Skill id="architecture" number={2} trTitle="skill.architecture.title" trSubTitle="skill.architecture.subTitle" language={language}>
+                        <Progress language={language} entries={[
+                            {trTitle: 'skill.architecture.microservices', percent: 100},
+                            {trTitle: 'skill.architecture.CI_CD', percent: 100},
+                            {trTitle: 'skill.architecture.AWS', percent: 80},
+                            {trTitle: 'skill.architecture.webServices', percent: 100},
+                            {trTitle: 'skill.architecture.docker', percent: 100},
+                            {trTitle: 'skill.architecture.SQL_NoSQL', percent: 70},
+                            {trTitle: 'skill.architecture.softwareArchitecture', percent: 100},
+                            {trTitle: 'skill.architecture.terraform', percent: 20},
+                        ]}/>
+                    </Skill>
 
-                <Skill id="language" number={3} trTitle="skill.language.title" trSubTitle="skill.language.subTitle" language={language}>
-                    <Circle language={language} entries={[
-                        {trTitle: 'skill.language.german', percent: 100},
-                        {trTitle: 'skill.language.english', percent: 80},
-                    ]}/>
-                </Skill>
+                    <Skill id="language" number={3} trTitle="skill.language.title" trSubTitle="skill.language.subTitle" language={language}>
+                        <Circle language={language} entries={[
+                            {trTitle: 'skill.language.german', percent: 100},
+                            {trTitle: 'skill.language.english', percent: 80},
+                        ]}/>
+                    </Skill>
+                </Skills>
             </Section>
 
             <Section id="fun_facts" index={5} count={7} next="experience" language={language}>
