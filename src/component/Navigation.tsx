@@ -15,7 +15,7 @@ const LINKS = ['hero', 'about', 'services', 'skills', 'fun_facts', 'experience',
 
 type NavigationProps = {
     open: boolean;
-    setOpen: Function
+    setOpen: (state: boolean) => void;
 } & MS.ComponentParameter;
 
 export default function Navigation({language, open, setOpen}: NavigationProps) {

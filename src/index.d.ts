@@ -1,6 +1,6 @@
 import React from 'react';
 
-declare module MS {
+declare namespace MS {
     type Translation = {
         [key: string]: string | Translation;
     };

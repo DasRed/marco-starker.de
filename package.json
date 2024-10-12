@@ -26,7 +26,7 @@
     ],
     "scripts": {
         "dev": "NODE_OPTIONS='--disable-warning=DEP0040' next dev -p 7770",
-        "build": "next build",
+        "build": "NODE_OPTIONS='--disable-warning=DEP0040' next build",
         "start": "next start -p 7770",
         "lint": "NODE_OPTIONS='--disable-warning=DEP0040' next lint",
         "semantic-release": "semantic-release"
@@ -48,6 +48,8 @@
         "accept-language-parser": "^1.5.0",
         "apexcharts": "^3.49.2",
         "bootstrap": "^5.3.3",
+        "eslint": "8.57.1",
+        "eslint-config-next": "14.2.15",
         "glightbox": "^3.3.0",
         "gsap": "^3.12.5",
         "lodash.throttle": "^4.1.1",

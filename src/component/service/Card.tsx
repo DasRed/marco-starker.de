@@ -10,29 +10,29 @@ type BackendProps = MS.ComponentParameter & {
 
 export default function Card({id, number, language, trTitle, trList}: BackendProps) {
     return (
-            <div className="service-card">
-                <div className="card-inner"></div>
-                <div className="content">
-                    <div className="number-circle">
-                        <div className="waves-top-sm">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                        <h2>{String(number).padStart(2, '0')}</h2>
-                        <div className="waves-bottom-sm">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
+        <div key={id} className="service-card">
+            <div className="card-inner"></div>
+            <div className="content">
+                <div className="number-circle">
+                    <div className="waves-top-sm">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
                     </div>
-                    <h4>{__t(language, trTitle)}</h4>
-                    <ul className="service-list">
-                        {trList.map((tr) => (<li key={tr}><i className="ph ph-caret-double-right"></i> {__t(language, tr)}</li>))}
-                    </ul>
+                    <h2>{String(number).padStart(2, '0')}</h2>
+                    <div className="waves-bottom-sm">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
+                <h4>{__t(language, trTitle)}</h4>
+                <ul className="service-list">
+                    {trList.map((tr) => (<li key={tr}><i className="ph ph-caret-double-right"></i> {__t(language, tr)}</li>))}
+                </ul>
             </div>
+        </div>
     );
 }

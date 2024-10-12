@@ -32,7 +32,7 @@ export default function Experience({language, children}: ExperienceProps) {
             },
         });
 
-        gsap.utils.toArray('.experience-item').forEach((item) => gsap.to(item as Object, {
+        gsap.utils.toArray('.experience-item').forEach((item) => gsap.to(item as object, {
             '--item-height': '100%',
             stagger:         0.5,
             delay:           0.5,

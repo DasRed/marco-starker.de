@@ -68,7 +68,7 @@ export const TECHS = {
 };
 
 export default function Item({from, to, title, company, technologies, language, children}: ItemProps) {
-    let dateTime = [
+    const dateTime = [
         from.month ? String(from.month).padStart(2, '0') + '/' : '',
         from.year,
         ' - ',

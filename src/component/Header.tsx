@@ -9,7 +9,7 @@ import __t from '../translation';
 
 type HeaderProps = {
     open: boolean;
-    setOpen: Function;
+    setOpen: (state: boolean) => void;
 } & MS.ComponentParameter;
 
 export default function Header({language, open, setOpen}: HeaderProps) {
