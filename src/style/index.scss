@@ -180,6 +180,14 @@ h6 {
         }
     }
 
+    .language {
+        filter: grayscale(0.4);
+        opacity: 0.7;
+        .text {
+            display: none;
+        }
+    }
+
     .nav-icon {
         width: 36px;
         height: 22px;
@@ -295,6 +303,22 @@ h6 {
         height: var(--height);
         background: rgb(var(--black));
         opacity: 0.3;
+    }
+
+    .language {
+        margin-left: 34px;
+        margin-bottom: 8px;
+
+        .flag {
+            svg {
+                width: 19px;
+            }
+        }
+        .text {
+            padding-left: 4px;
+            font-size: 16px;
+            font-weight: 500;
+        }
     }
 
     ul {

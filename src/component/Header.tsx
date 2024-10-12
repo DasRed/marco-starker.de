@@ -1,5 +1,6 @@
 'use client';
 
+import Language from './Language';
 import logo from './logo.png';
 import Image from 'next/image'
 import Link from 'next/link'
@@ -37,13 +38,16 @@ export default function Header({language, open, setOpen}: HeaderProps) {
 
     return (
         <header className={`header ${shrink ? 'shrink' : ''}`}>
-            <div className="container-fluid d-flex align-items-center justify-content-between">
-                <Link href="." className="logo">
+            <div className="container-fluid d-flex align-items-center justify-content-end">
+                <Link href="." className="logo me-auto">
                     <Image src={logo} alt={__t(language, 'logo')}/>
                     <span>{__t(language, 'name.full')}</span>
                 </Link>
 
-                <button className="bg-transparent border-0 d-xl-none" onClick={() => setOpen(!open)}>
+                <div className="language mt-2 me-2 d-none d-sm-block">
+                    <Language language={language} />
+                </div>
+                <button className="bg-transparent border-0 d-xl-none me-2" onClick={() => setOpen(!open)}>
                     <div className={`nav-icon ${open ? 'open' : ''}`}>
                         <span></span>
                         <span></span>

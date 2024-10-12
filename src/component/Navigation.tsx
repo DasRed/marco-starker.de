@@ -2,13 +2,14 @@ import {useGSAP} from '@gsap/react';
 import gsap from 'gsap';
 import Image from 'next/image';
 import Link from 'next/link'
-import {useRef} from 'react';
+import React, {useRef} from 'react';
 // @ts-ignore
 import shuffleLetters from 'shuffle-letters';
 import config from '../config';
 import MS from '../index';
 import __t from '../translation';
 import {useScrollspy} from '../useScrollspy';
+import Language from './Language';
 import logo from './logo.png';
 
 const LINKS = ['hero', 'about', 'services', 'skills', 'fun_facts', 'experience', 'contact'];
@@ -54,6 +55,11 @@ export default function Navigation({language, open, setOpen}: NavigationProps) {
     return (
         <nav id="navigation" ref={container} className={`navigation ${open ? 'opened' : ''}`} style={{visibility: 'hidden'}}>
             <Image src={logo} className="mb-4 d-xl-none" alt={__t(language, 'logo')}/><span>{__t(language, 'name.full')}</span>
+
+            <div className="language d-sm-none">
+                <Language language={language}/>
+            </div>
+
             <ul>
                 {LINKS.map((LINK, index) => (
                     <li key={LINK} className="nav-link">

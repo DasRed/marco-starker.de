@@ -1,6 +1,10 @@
 import MS from '../index';
 
 export default <MS.Translation>{
+    language: {
+        en: 'deutsch',
+        de: 'english',
+    },
     meta: {
         description: 'Marco Starker - Senior Fullstack Developer with expertise in web applications, PHP, JavaScript, NodeJS, Docker, and AWS. Available for freelance projects and long-term collaborations. Contact me for innovative software solutions and personalized consulting.',
     },
