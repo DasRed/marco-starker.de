@@ -1,13 +1,11 @@
-FROM node:21.7.1-alpine
+FROM node:22-alpine
 
 WORKDIR /var/www
 
-RUN mkdir -p /var/www/public
-COPY ./public /var/www/public
+RUN mkdir -p /var/www/.next
+COPY ./.next /var/www/.next
 
-RUN mkdir -p /var/www/server
-COPY ./server /var/www/server
-
+COPY ./next.config.js /var/www/next.config.js
 COPY ./package.json /var/www/package.json
 COPY ./package-lock.json /var/www/package-lock.json
 

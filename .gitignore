@@ -23,3 +23,6 @@
 /dist
 /out.json
 /public/dist
+/old/
+/next-env.d.ts
+/.next/
