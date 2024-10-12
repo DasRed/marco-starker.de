@@ -6,7 +6,7 @@ const __dirname = path.resolve(path.dirname(fileURLToPath(import.meta.url)));
 /** @type {import('next').NextConfig} */
 export default {
     //appDir: true,
-    //reactStrictMode: true,
+    reactStrictMode: process.env.NODE_ENV !== 'production',
     ///**
     // *
     // * @param {import('next/dist/server/config-shared.js').NextJsWebpackConfig} config

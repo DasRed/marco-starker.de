@@ -4,6 +4,6 @@ data:
     node: 22
     port: 7770
     environmentVariables: '[]'
-    deployToHost: 192.168.178.5
+    deployToHost: 192.168.178.3
     parameters: ''
     dockerName: ''

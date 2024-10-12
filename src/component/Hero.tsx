@@ -1,19 +1,18 @@
-import hero from '/public/hero.png';
+import hero from './hero.png';
 import {useGSAP} from '@gsap/react';
 import gsap from 'gsap';
-import ScrollTrigger from 'gsap/ScrollTrigger';
 import Image from 'next/image';
 import Link from 'next/link'
 import {useRef} from 'react';
+import Typewriter from 'typewriter-effect';
 import MS from '../index';
 import __t from '../translation';
-import Typewriter from 'typewriter-effect';
 
 export default function Hero({language}: MS.ComponentParameter) {
     const container = useRef(null);
 
     useGSAP(() => {
-        const element = container.current as HTMLElement|null;
+        const element = container.current as HTMLElement | null;
         if (element === null) {
             return;
         }
@@ -33,7 +32,7 @@ export default function Hero({language}: MS.ComponentParameter) {
                     <h4 className="text-uppercase freelancer">{__t(language, 'hero.freelancer')}</h4>
                     <h1 className="text-uppercase overflow-hidden developer" id="typewriter">
                         <Typewriter options={{
-                            strings: __t(language, 'hero.typewriter').split(',').map((entry) => entry.trim()),
+                            strings:   __t(language, 'hero.typewriter').split(',').map((entry) => entry.trim()),
                             autoStart: true,
                             loop:      true,
                             delay:     200,

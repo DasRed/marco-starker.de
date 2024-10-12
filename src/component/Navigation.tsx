@@ -1,4 +1,4 @@
-import logo from '/public/logo.png';
+import logo from './logo.png';
 import {useGSAP} from '@gsap/react';
 import gsap from 'gsap';
 import Image from 'next/image';
