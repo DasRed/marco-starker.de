@@ -58,14 +58,14 @@
         "sass": "^1.79.4",
         "semantic-release": "^24.1.2",
         "semantic-release-cli": "^5.4.6",
-        "sharp": "^0.33.5",
         "shuffle-letters": "^1.1.0",
         "swiper": "^11.1.4",
         "typescript": "^5.6.3",
         "typewriter-effect": "^2.21.0"
     },
     "dependencies": {
-        "next": "^14.2.15"
+        "next": "^14.2.15",
+        "sharp": "^0.33.5"
     },
     "release": {
         "branches": [
