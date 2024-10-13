@@ -20,6 +20,11 @@ declare namespace MS {
     };
 
     type ProcessEnv = NodeJS.ProcessEnv & {
+        NODE_ENV: string;
+
+        MS_ANALYTICS_URL: string;
+        MS_ANALYTICS_ID: string;
+
         MS_LANGUAGE_DEFAULT?: string;
         MS_LANGUAGE_FALLBACK?: string;
 
@@ -35,6 +40,14 @@ declare namespace MS {
     };
 
     type Config = {
+        isProduction: boolean;
+
+        analytics: {
+            enabled: boolean;
+            id: string;
+            url: string;
+        };
+
         language: {
             default: string;
             fallback: string;

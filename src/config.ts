@@ -2,6 +2,14 @@ import MS from './index';
 
 export function creator(env: MS.ProcessEnv): MS.Config {
     return {
+        isProduction: env.NODE_ENV === 'production',
+
+        analytics: {
+            enabled: env.NODE_ENV === 'production',
+            id: env.MS_ANALYTICS_ID ?? '59677b8a-fb6a-4365-b81c-9a6b6914437a',
+            url: env.MS_ANALYTICS_URL ?? 'https://umami.dasred.de/script.js',
+        },
+
         language: {
             default:   env.MS_LANGUAGE_DEFAULT ?? 'en',
             fallback:  env.MS_LANGUAGE_FALLBACK ?? 'en',
@@ -25,4 +33,4 @@ export function creator(env: MS.ProcessEnv): MS.Config {
     };
 }
 
-export default creator(process.env);
+export default creator(<MS.ProcessEnv>process.env);

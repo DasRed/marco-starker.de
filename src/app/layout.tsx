@@ -2,6 +2,7 @@ import type {Metadata} from 'next';
 import {Poppins} from 'next/font/google';
 import React from 'react';
 import '../style/index.scss';
+import config from '../config';
 
 const poppins = Poppins({
     subsets:  ['latin'],
@@ -21,6 +22,9 @@ export async function generateMetadata(): Promise<Metadata> {
 export default function RootLayout({children}: { children: React.ReactNode; }) {
     return (
         <html className={poppins.variable}>
+        <head>
+            {config.analytics.enabled ? <script defer src="${config.analytics.url}" data-website-id="${config.analytics.id}"></script>: <></>}
+        </head>
         <body className={`${poppins.variable} antialiased`}>
         {children}
         </body>
