@@ -7,7 +7,7 @@ export function creator(env: MS.ProcessEnv): MS.Config {
         analytics: {
             enabled: env.NODE_ENV === 'production',
             id: env.MS_ANALYTICS_ID ?? '59677b8a-fb6a-4365-b81c-9a6b6914437a',
-            url: env.MS_ANALYTICS_URL ?? 'https://umami.dasred.de/script.js',
+            url: env.MS_ANALYTICS_URL ?? 'https://umami.marco-starker.de/script.js',
         },
 
         language: {
