@@ -23,7 +23,7 @@ export default function RootLayout({children}: { children: React.ReactNode; }) {
     return (
         <html className={poppins.variable}>
         <head>
-            {config.analytics.enabled ? <script defer src="${config.analytics.url}" data-website-id="${config.analytics.id}"></script>: <></>}
+            {config.analytics.enabled ? <script defer src={config.analytics.url} data-website-id={config.analytics.id}></script>: <></>}
         </head>
         <body className={`${poppins.variable} antialiased`}>
         {children}
