@@ -9,7 +9,7 @@ export default <MS.Translation>{
 
     navigation: {
         hero:       'Start',
-        about:      'Über mich',
+        about:      'über mich',
         services:   'Meine Dienstleistungen',
         skills:     'Fähigkeiten',
         fun_facts:  'Fakten',
