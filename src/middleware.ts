@@ -12,7 +12,7 @@ export function middleware(request: NextRequest): NextResponse {
     const {pathname}        = request.nextUrl;
     const pathnameHasLocale = configApp.language.available.some((locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`);
 
-    if (pathnameHasLocale || pathname.endsWith('favicon.ico')) {
+    if (pathnameHasLocale || pathname.endsWith('favicon.ico') || pathname.endsWith('healthcheck')) {
         return NextResponse.next();
     }
 

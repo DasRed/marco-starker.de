@@ -11,7 +11,7 @@ COPY ./package-lock.json /var/www/package-lock.json
 
 ENV NODE_ENV production
 
-#HEALTHCHECK CMD wget --no-verbose --tries=1 --spider http://localhost:7770/healthcheck || exit 1
+HEALTHCHECK CMD wget --no-verbose --tries=1 --spider http://localhost:7770/healthcheck || exit 1
 
 CMD npm install --omit=dev && npm start
 #CMD cron && /etc/init.d/nginx start && php-fpm >> /var/log/php-fpm-access.log 2> /var/log/php-fpm-error.log
