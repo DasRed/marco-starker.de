@@ -16,7 +16,7 @@ export function creator(env: MS.ProcessEnv): MS.Config {
             available: ['en', 'de'],
         },
 
-        email:    env.MS_EMAIL ?? 'marco.starker@gmx.net',
+        email:    env.MS_EMAIL ?? 'info@marco-starker.de',
         mobile:   env.MS_MOBILE ?? '+49 160 5543322',
         resume:   {
             de: env.MS_RESUME_DE ?? 'https://storage.rxresu.me/clxbgu1nm003mv6lwyhrcjjta/resumes/CV (deutsch) (lang).pdf',
