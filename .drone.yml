@@ -1,9 +1,22 @@
 kind: template
 load: nodeProject.jsonnet
 data:
-    node: 22
-    port: 7770
-    environmentVariables: '[]'
-    deployToHost: 10.2.2.2
-    parameters: ''
-    dockerName: ''
+  #    node: 22
+  #    port: 7770
+  #    environmentVariables: '[]'
+  #    deployToHost: 10.2.2.2
+  #    parameters: ''
+  #    dockerName: ''
+  #    grafanaDisplay: 'true'
+  #    grafanaName: 'marco-starker.de'
+  config: |
+    {
+        "docker": {
+            "host": "chronos.dasred.de",
+            "port": 7770,
+            "labels": {
+                "grafana.display": true,
+                "grafana.name": "marco-starker.de"
+            }
+        }
+    }
