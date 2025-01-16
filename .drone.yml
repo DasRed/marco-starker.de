@@ -1,14 +1,6 @@
 kind: template
 load: nodeProject.jsonnet
 data:
-  #    node: 22
-  #    port: 7770
-  #    environmentVariables: '[]'
-  #    deployToHost: 10.2.2.2
-  #    parameters: ''
-  #    dockerName: ''
-  #    grafanaDisplay: 'true'
-  #    grafanaName: 'marco-starker.de'
   config: |
     {
         "docker": {
