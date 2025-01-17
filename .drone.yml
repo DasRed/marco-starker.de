@@ -8,7 +8,9 @@ data:
             "port": 7770,
             "labels": {
                 "grafana.display": true,
-                "grafana.name": "marco-starker.de"
+                "grafana.name": "marco-starker.de",
+                "homeassistant.enable": true,
+                "homeassistant.device_name": "marco-starker.de"
             }
         }
     }
