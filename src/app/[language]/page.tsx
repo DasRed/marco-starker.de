@@ -33,7 +33,8 @@ function outlineNumbers(event: MouseEvent): void {
     numberOutlineTwo.forEach((element: HTMLElement) => element.style.transform = `translate(${offsetX}px, ${offsetY}px)`);
 }
 
-export default function Home({params: {language}}: MS.PageParameter) {
+export default function Home({params}: MS.PageParameter) {
+    const {language} = React.use(params);
     useEffect(() => {
         // @ts-ignore
         document.addEventListener('mousemove', outlineNumbers);

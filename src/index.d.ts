@@ -6,9 +6,7 @@ declare namespace MS {
     };
 
     type PageParameter = {
-        params: {
-            language: string;
-        }
+        params: Promise<{ language: string; }>
     };
 
     type ChildPageParameter = PageParameter & {

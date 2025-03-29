@@ -4,7 +4,8 @@ import Layout from '../../component/Layout';
 import MS from '../../index';
 import __t from '../../translation';
 
-export async function generateMetadata({params: {language}}: MS.PageParameter): Promise<Metadata> {
+export async function generateMetadata({params}: MS.PageParameter): Promise<Metadata> {
+    const {language} = await params;
     return {
         title:       __t(language, 'name.full'),
         description: __t(language, 'meta.description'),
@@ -14,7 +15,8 @@ export async function generateMetadata({params: {language}}: MS.PageParameter): 
     };
 }
 
-export default function RootLayout({children, params: {language}}: MS.ChildPageParameter) {
+export default async function RootLayout({children, params}: MS.ChildPageParameter) {
+    const {language} = await params;
     return (
         <Layout language={language}>
             {children}
