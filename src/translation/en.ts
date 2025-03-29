@@ -5,7 +5,7 @@ export default <MS.Translation>{
         en: 'deutsch',
         de: 'english',
     },
-    meta: {
+    meta:     {
         description: 'Marco Starker - Senior Fullstack Developer with expertise in web applications, PHP, JavaScript, NodeJS, Docker, and AWS. Available for freelance projects and long-term collaborations. Contact me for innovative software solutions and personalized consulting.',
     },
 
@@ -27,7 +27,7 @@ export default <MS.Translation>{
 
     resume: {
         fileName: 'Resume Marco Starker.pdf',
-        download: 'download resume'
+        download: 'download resume',
     },
 
     nextChapter: 'Next Chapter',
@@ -158,6 +158,7 @@ export default <MS.Translation>{
         title1:     'Highlight My key Experiences',
         title2:     'My Experience',
         at:         'at',
+        untilNow:   'today',
         downloadCV: 'Download my full CV',
 
         SeniorSoftwareDeveloper: 'Senior Software Developer',
@@ -211,12 +212,34 @@ export default <MS.Translation>{
             Strapi:               'Strapi',
             Svelte:               'Svelte',
             Symfony:              'Symfony',
+            Swift:                'Swift',
+            Tailwind:             'Tailwind',
             TechnicalPlanning:    'Technical Planning',
             UnitTests:            'Unit Tests',
             WebDevelopment:       'Web Development',
             WebServices:          'Web Services',
             WebSocket:            'WebSocket',
             iOS:                  'iOS',
+            ionos:                'Ionos',
+            hetzner:              'Hetzner',
+            python:               'Python',
+            flutter:              'Flutter',
+            dart:                 'Dart',
+            pwa:                  'PWA Apps',
+        },
+
+        freelancer2025_zweihandemehr: 'Development of a business directory with an administration interface that includes various services such as childcare, senior care, and cleaning staff.',
+
+        prodactive: {
+            list1: 'Development of web applications and microservices',
+            list2: 'Creating PWA Apps',
+            list3: 'Development of iOS and Android apps',
+        },
+
+        freelancer2025_1: {
+            list1: 'Creation of a website for the Oberland veterinary ophthalmology practice',
+            list2: 'Creation of a website for the HPU coach Michaela Hanisch',
+            list3: 'New development of the iOS game Coocader',
         },
 
         zeppelin: {
@@ -266,7 +289,7 @@ export default <MS.Translation>{
 
         isu: {
             developer:  'Further development, maintenance, and setup of a cutting profile optimization software in Visual Basic. Programming and controlling of robotic cutting machines.',
-            freelancer: 'Development, maintenance, and setup of a cutting profile optimization software in Visual Basic.'
+            freelancer: 'Development, maintenance, and setup of a cutting profile optimization software in Visual Basic.',
         },
 
         hettich: 'Further development, documentation, care and maintenance of a customer service software in Visual Basic, database replication, interface development to AS400.',
@@ -288,6 +311,6 @@ export default <MS.Translation>{
             submit:             'submit',
             sending:            'Sending...',
             success:            'Success',
-        }
-    }
+        },
+    },
 };

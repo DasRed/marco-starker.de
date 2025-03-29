@@ -2,7 +2,7 @@ import MS from '../index';
 
 export default <MS.Translation>{
     meta: {
-        description: 'Marco Starker - Senior Fullstack Developer mit Expertise in Webanwendungen, PHP, JavaScript, NodeJS, Docker und AWS. Verfügbar für Freelancer-Projekte und langfristige Kooperationen. Kontaktieren Sie mich für innovative Softwarelösungen und individuelle Beratung.'
+        description: 'Marco Starker - Senior Fullstack Developer mit Expertise in Webanwendungen, PHP, JavaScript, NodeJS, Docker und AWS. Verfügbar für Freelancer-Projekte und langfristige Kooperationen. Kontaktieren Sie mich für innovative Softwarelösungen und individuelle Beratung.',
     },
 
     logo: 'Bild von Marco Starker',
@@ -19,7 +19,7 @@ export default <MS.Translation>{
 
     resume: {
         fileName: 'Lebenslauf Marco Starker.pdf',
-        download: 'Lebenslauf herunterladen'
+        download: 'Lebenslauf herunterladen',
     },
 
     nextChapter: 'nächster Abschnitt',
@@ -150,6 +150,7 @@ export default <MS.Translation>{
         title1:     'Highlights meiner Erfahrungen',
         title2:     'meine Erfahrungen',
         at:         'bei',
+        untilNow:   'heute',
         downloadCV: 'Lade meinen vollständingen CV herunter',
 
         SeniorSoftwareDeveloper: 'Senior Software Developer',
@@ -190,7 +191,7 @@ export default <MS.Translation>{
             PHP:                  'PHP',
             PerformanceAnalysis:  'Performance Optimierungen',
             PostgreSQL:           'PostgreSQL',
-            ProjectPlanning:      'Prjektplanung',
+            ProjectPlanning:      'Projektplanung',
             ReactJs:              'React.js',
             ReactNative:          'React Native',
             Redis:                'Redis',
@@ -203,12 +204,35 @@ export default <MS.Translation>{
             Strapi:               'Strapi',
             Svelte:               'Svelte',
             Symfony:              'Symfony',
+            Swift:                'Swift',
+            Tailwind:             'Tailwind',
             TechnicalPlanning:    'Technische Planung',
             UnitTests:            'Unit Tests',
             WebDevelopment:       'Web Development',
             WebServices:          'Web Services',
             WebSocket:            'WebSocket',
             iOS:                  'iOS',
+            ionos:                'Ionos',
+            hetzner:              'Hetzner',
+            python:               'Python',
+            flutter:              'Flutter',
+            dart:                 'Dart',
+            pwa:                  'PWA Apps',
+            android: 'Android'
+        },
+
+        freelancer2025_zweihandemehr: 'Entwicklung eines Branchenbuches mit Administrationsoberfläche, das verschiedene Dienstleistungen wie Kinderbetreuung, Seniorenbetreuung und Reinigungskräfte umfasst.',
+
+        prodactive: {
+            list1: 'Entwicklung von Webanwendungen und Microservices',
+            list2: 'Erstellen von PWA Apps',
+            list3: 'Entwicklung von iOS und Android Apps',
+        },
+
+        freelancer2025_1: {
+            list1: 'Erstellung einer Webseite für die Augentierarztpraxis Oberland',
+            list2: 'Erstellung einer Webseite für den HPU Coach Michaela Hanisch',
+            list3: 'Neuentwicklung des iOS Games Coocader',
         },
 
         zeppelin: {
@@ -258,7 +282,7 @@ export default <MS.Translation>{
 
         isu: {
             developer:  'Weiterentwicklung, Wartung, Pflege und Einrichtung einer Schnittprofiloptimierungssoftware in Visual Basic. Programmierung und Steuerung von Roboterschneidanlagen.',
-            freelancer: 'Entwicklung, Wartung, Pflege und Einrichtung einer Schnittprofiloptimierungssoftware in Visual Basic.'
+            freelancer: 'Entwicklung, Wartung, Pflege und Einrichtung einer Schnittprofiloptimierungssoftware in Visual Basic.',
         },
 
         hettich: 'Weiterentwicklung, Dokumentation, Pflege und Wartung einer Kundendienstsoftware in Visual Basic, Datenbank Replikation, Schnittstellenentwicklung zu AS400.',
@@ -280,6 +304,6 @@ export default <MS.Translation>{
             submit:             'Senden',
             sending:            'Senden...',
             success:            'Versendet',
-        }
-    }
+        },
+    },
 };

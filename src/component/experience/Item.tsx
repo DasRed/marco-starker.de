@@ -9,7 +9,7 @@ type DateItem = {
 };
 type ItemProps = {
     from: DateItem;
-    to: DateItem;
+    to?: DateItem;
     title: string;
     company?: string;
     technologies?: string[];
@@ -33,7 +33,9 @@ export const TECHS = {
     FULLSTACK_DEVELOPMENT: 'experience.tech.FullStackDevelopment',
     GIT:                   'experience.tech.GIT',
     GITFLOW:               'experience.tech.GitFlow',
+    HETZNER:               'experience.tech.hetzner',
     IOS:                   'experience.tech.iOS',
+    IONOS:                 'experience.tech.ionos',
     JAVASCRIPT:            'experience.tech.JavaScript',
     KUBERNETES:            'experience.tech.Kubernetes',
     LARAVEL:               'experience.tech.Laravel',
@@ -60,11 +62,17 @@ export const TECHS = {
     STRAPI:                'experience.tech.Strapi',
     SVELTE:                'experience.tech.Svelte',
     SYMFONY:               'experience.tech.Symfony',
+    SWIFT:               'experience.tech.Swift',
+    TAILWIND:    'experience.tech.Tailwind',
     TECHNICAL_PLANNING:    'experience.tech.TechnicalPlanning',
     UNITTESTS:             'experience.tech.UnitTests',
     WEBDEVELOPMENT:        'experience.tech.WebDevelopment',
     WEBSERVICES:           'experience.tech.WebServices',
     WEBSOCKET:             'experience.tech.WebSocket',
+    PYTHON:             'experience.tech.python',
+    FLUTTER:             'experience.tech.flutter',
+    DART:             'experience.tech.dart',
+    PWA:             'experience.tech.pwa',
 };
 
 export default function Item({from, to, title, company, technologies, language, children}: ItemProps) {
@@ -72,9 +80,15 @@ export default function Item({from, to, title, company, technologies, language, 
         from.month ? String(from.month).padStart(2, '0') + '/' : '',
         from.year,
         ' - ',
-        to.month ? String(to.month).padStart(2, '0') + '/' : '',
-        to.year
-    ];
+        ];
+
+    if (to !== undefined) {
+        dateTime.push(to.month ? String(to.month).padStart(2, '0') + '/' : '', to.year);
+    }
+    else {
+        dateTime.push(__t(language, 'experience.untilNow'))
+    }
+
     return (
         <div className="experience-item">
             <h5>

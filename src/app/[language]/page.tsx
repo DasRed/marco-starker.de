@@ -104,6 +104,36 @@ export default function Home({params: {language}}: MS.PageParameter) {
 
             <Section id="experience" index={6} count={7} next="contact" language={language}>
                 <Experience language={language}>
+                    <Item from={{month: 3, year: 2025}} title="experience.FreelanceWork" language={language} technologies={[
+                        TECHS.NODEJS, TECHS.NEXTJS, TECHS.REACTJS, TECHS.TAILWIND, TECHS.DOCKER, TECHS.HETZNER
+                    ]}>
+                        <Text trKey="experience.freelancer2025_zweihandemehr" language={language}/>
+                    </Item>
+
+                    <Item from={{month: 2, year: 2025}} title="experience.SeniorSoftwareDeveloper" company="prodactive GmbH" language={language} technologies={[
+                        TECHS.TECHNICAL_PLANNING, TECHS.DEVELOPMENT, TECHS.MAINTENANCE, TECHS.NODEJS,
+                        TECHS.NEXTJS, TECHS.REACTJS, TECHS.TAILWIND, TECHS.PYTHON, TECHS.FLUTTER, TECHS.DART, TECHS.PWA,
+                        TECHS.IOS, TECHS.ANDROID,
+                        TECHS.AWS, TECHS.HETZNER, TECHS.DOCKER, TECHS.SCRUM, TECHS.PROJECT_PLANNING,
+                    ]}>
+                        <List language={language} trKeys={[
+                            'experience.prodactive.list1',
+                            'experience.prodactive.list2',
+                            'experience.prodactive.list3',
+                        ]}></List>
+                    </Item>
+
+                    <Item from={{month: 12, year: 2024}} to={{month: 2, year: 2025}} title="experience.FreelanceWork" language={language} technologies={[
+                        TECHS.SWIFT, TECHS.IOS, TECHS.NODEJS, TECHS.NEXTJS, TECHS.REACTJS, TECHS.TAILWIND, TECHS.PHP, TECHS.LARAVEL, TECHS.AWS, TECHS.DOCKER,
+                        TECHS.IONOS, TECHS.HETZNER
+                    ]}>
+                        <List language={language} trKeys={[
+                            'experience.freelancer2025_1.list1',
+                            'experience.freelancer2025_1.list2',
+                            'experience.freelancer2025_1.list3',
+                        ]}></List>
+                    </Item>
+
                     <Item from={{month: 9, year: 2019}} to={{month: 11, year: 2024}} title="experience.SeniorSoftwareDeveloper" company="Zeppelin / z-Lab GmbH" language={language} technologies={[
                         TECHS.TECHNICAL_PLANNING, TECHS.DEVELOPMENT, TECHS.MAINTENANCE, TECHS.NODEJS, TECHS.STRAPI,
                         TECHS.NEXTJS, TECHS.PHP, TECHS.LARAVEL, TECHS.SYMFONY, TECHS.SVELTE, TECHS.SASS, TECHS.AWS,
