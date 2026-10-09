@@ -38,7 +38,7 @@ export default <MS.Translation>{
         title2:             'lerne mich besser kennen',
         headline:           'Ich bin Marco Starker, ein Full-Stack Entwickler',
         description:        `
-                        Ich bin ein leidenschaftlicher und vielseitiger Fullstack-Entwickler mit über 20 Jahren Erfahrung in der Softwareentwicklung.
+                        Ich bin ein leidenschaftlicher und vielseitiger Fullstack-Entwickler mit über 25 Jahren Erfahrung in der Softwareentwicklung.
                         Mein beruflicher Werdegang umfasst umfangreiche Kenntnisse in den Bereichen Webanwendungen und Backend-Entwicklung,
                         wobei ich mich auf Technologien wie PHP, JavaScript, NodeJS, TypeScript, Docker und AWS spezialisiert habe.
 
@@ -51,7 +51,7 @@ export default <MS.Translation>{
         dateOfBirth:        '22. März 1978',
         locationLabel:      'Standort:',
         location:           'Vierkirchen in der Nähe von München, Bayern',
-        numberOfYears:      '20+',
+        numberOfYears:      '25+',
         numberOfYearsLabel: 'Erfahrung in Jahren',
     },
 
@@ -154,6 +154,7 @@ export default <MS.Translation>{
         downloadCV: 'Lade meinen vollständingen CV herunter',
 
         SeniorSoftwareDeveloper: 'Senior Software Developer',
+        LeadDeveloper:           'Lead Developer',
         FreelanceWork:           'freiberufliche Tätigkeit',
         DeputyTeamManager:       'Stellvertretender Teammanager',
         TechnicalLead:           'Technical Lead',
@@ -218,15 +219,26 @@ export default <MS.Translation>{
             flutter:              'Flutter',
             dart:                 'Dart',
             pwa:                  'PWA Apps',
-            android: 'Android'
+            android:              'Android',
+            typescript:           'TypeScript',
+            vite:                 'Vite',
+            vitest:               'Vitest',
+            mui:                  'MUI',
+            sanic:                'Sanic',
+            circleci:             'CircleCI',
+            semanticRelease:      'semantic-release',
+            ai:                   'KI-gestützte Entwicklung',
         },
 
         freelancer2025_zweihandemehr: 'Entwicklung eines Branchenbuches mit Administrationsoberfläche, das verschiedene Dienstleistungen wie Kinderbetreuung, Seniorenbetreuung und Reinigungskräfte umfasst.',
 
         prodactive: {
-            list1: 'Entwicklung von Webanwendungen und Microservices',
-            list2: 'Erstellen von PWA Apps',
-            list3: 'Entwicklung von iOS und Android Apps',
+            list1: 'Lead Developer für das „Bautool“: All-in-One-Lösung für internes Ressourcenmanagement in Bauunternehmen, die Baustelle, Bauhof und Büro vernetzt (Team mit 3 Personen)',
+            list2: 'Technische Planung, Weiterentwicklung und Kundenbetreuung: Verwaltung von Baumaterialien, Disposition, Routenplanung, Projekte',
+            list3: 'Web-Frontend mit React, Vite und Tailwind, Backend-Services mit Node.js, Python und PostgreSQL, eigener CDN- und Telematik-Service',
+            list4: 'Mobile App für iOS und Android mit Flutter',
+            list5: 'BesichtigungsApp: offlinefähige, installierbare Web-App (PWA) zur Immobilienbewertung durch Bankmitarbeiter (Monorepo, React, TypeScript)',
+            list6: 'KI-gestützte Entwicklung: Code, Refactoring und Tests',
         },
 
         freelancer2025_1: {

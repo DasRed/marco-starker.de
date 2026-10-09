@@ -46,7 +46,7 @@ export default <MS.Translation>{
         title2:             'know me more',
         headline:           'I\'m Marco Starker, a Full-Stack Developer',
         description:        `
-                        I am a passionate and versatile full-stack developer with over a 20 years of experience in software development.
+                        I am a passionate and versatile full-stack developer with over 25 years of experience in software development.
                         My career encompasses extensive expertise in web applications and backend development, with a focus on technologies
                         such as PHP, JavaScript, NodeJS, TypeScript, Docker, and AWS.
 
@@ -59,7 +59,7 @@ export default <MS.Translation>{
         dateOfBirth:        '22 March, 1978',
         locationLabel:      'Location:',
         location:           'Munich, Bavaria',
-        numberOfYears:      '20+',
+        numberOfYears:      '25+',
         numberOfYearsLabel: 'Years of experience',
     },
 
@@ -162,6 +162,7 @@ export default <MS.Translation>{
         downloadCV: 'Download my full CV',
 
         SeniorSoftwareDeveloper: 'Senior Software Developer',
+        LeadDeveloper:           'Lead Developer',
         FreelanceWork:           'Freelance Work',
         DeputyTeamManager:       'Deputy Team Manager',
         TechnicalLead:           'Technical Lead',
@@ -226,14 +227,25 @@ export default <MS.Translation>{
             flutter:              'Flutter',
             dart:                 'Dart',
             pwa:                  'PWA Apps',
+            typescript:           'TypeScript',
+            vite:                 'Vite',
+            vitest:               'Vitest',
+            mui:                  'MUI',
+            sanic:                'Sanic',
+            circleci:             'CircleCI',
+            semanticRelease:      'semantic-release',
+            ai:                   'AI-assisted development',
         },
 
         freelancer2025_zweihandemehr: 'Development of a business directory with an administration interface that includes various services such as childcare, senior care, and cleaning staff.',
 
         prodactive: {
-            list1: 'Development of web applications and microservices',
-            list2: 'Creating PWA Apps',
-            list3: 'Development of iOS and Android apps',
+            list1: 'Lead Developer for “Bautool”, an all-in-one solution for internal resource management in construction companies that connects construction sites, depots and offices (team of 3)',
+            list2: 'Technical planning, further development and customer support: construction materials, dispatching, route planning, projects',
+            list3: 'Web frontend with React, Vite and Tailwind, backend services with Node.js, Python and PostgreSQL, custom CDN and telematics services',
+            list4: 'Mobile app for iOS and Android with Flutter',
+            list5: 'Inspection app: offline-capable, installable web app (PWA) used by bank staff to assess properties (monorepo, React, TypeScript)',
+            list6: 'AI-assisted development: code, refactoring and tests',
         },
 
         freelancer2025_1: {

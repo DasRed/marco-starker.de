@@ -19,8 +19,8 @@ export function creator(env: MS.ProcessEnv): MS.Config {
         email:    env.MS_EMAIL ?? 'info@marco-starker.de',
         mobile:   env.MS_MOBILE ?? '+49 160 5543322',
         resume:   {
-            de: env.MS_RESUME_DE ?? 'https://storage.rxresu.me/clxbgu1nm003mv6lwyhrcjjta/resumes/CV (deutsch) (lang).pdf',
-            en: env.MS_RESUME_EN ?? 'https://storage.rxresu.me/clxbgu1nm003mv6lwyhrcjjta/resumes/CV (english) (long).pdf',
+            de: env.MS_RESUME_DE ?? '/resume/Lebenslauf-Marco-Starker.pdf',
+            en: env.MS_RESUME_EN ?? '/resume/Resume-Marco-Starker.pdf',
         },
         linkedIn: env.MS_LINKEDIN ?? 'https://www.linkedin.com/in/marco-starker-100090272/',
         github:   env.MS_GITHUB ?? 'https://github.com/DasRed',

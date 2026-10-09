@@ -6,6 +6,7 @@ RUN mkdir -p /var/www/.next
 COPY ./.next /var/www/.next
 
 COPY ./next.config.js /var/www/next.config.js
+COPY ./public /var/www/public
 COPY ./package.json /var/www/package.json
 COPY ./package-lock.json /var/www/package-lock.json
 

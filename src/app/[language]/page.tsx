@@ -72,8 +72,8 @@ export default function Home({params}: MS.PageParameter) {
                             {trTitle: 'skill.developer.php', percent: 100},
                             {trTitle: 'skill.developer.nodeJs', percent: 100},
                             {trTitle: 'skill.developer.javaScript', percent: 100},
-                            {trTitle: 'skill.developer.typeScript', percent: 60},
-                            {trTitle: 'skill.developer.reactJs', percent: 40},
+                            {trTitle: 'skill.developer.typeScript', percent: 90},
+                            {trTitle: 'skill.developer.reactJs', percent: 90},
                         ]}/>
                     </Skill>
 
@@ -111,16 +111,21 @@ export default function Home({params}: MS.PageParameter) {
                         <Text trKey="experience.freelancer2025_zweihandemehr" language={language}/>
                     </Item>
 
-                    <Item from={{month: 2, year: 2025}} title="experience.SeniorSoftwareDeveloper" company="prodactive GmbH" language={language} technologies={[
-                        TECHS.TECHNICAL_PLANNING, TECHS.DEVELOPMENT, TECHS.MAINTENANCE, TECHS.NODEJS,
-                        TECHS.NEXTJS, TECHS.REACTJS, TECHS.TAILWIND, TECHS.PYTHON, TECHS.FLUTTER, TECHS.DART, TECHS.PWA,
-                        TECHS.IOS, TECHS.ANDROID,
-                        TECHS.AWS, TECHS.HETZNER, TECHS.DOCKER, TECHS.SCRUM, TECHS.PROJECT_PLANNING,
+                    <Item from={{month: 2, year: 2025}} title="experience.LeadDeveloper" company="prodactive GmbH" language={language} technologies={[
+                        TECHS.TECHNICAL_PLANNING, TECHS.DEVELOPMENT, TECHS.MAINTENANCE,
+                        TECHS.REACTJS, TECHS.TYPESCRIPT, TECHS.VITE, TECHS.VITEST, TECHS.TAILWIND, TECHS.MUI, TECHS.PWA,
+                        TECHS.NODEJS, TECHS.PYTHON, TECHS.SANIC, TECHS.POSTGRESQL,
+                        TECHS.FLUTTER, TECHS.DART, TECHS.IOS, TECHS.ANDROID,
+                        TECHS.AWS, TECHS.HETZNER, TECHS.DOCKER, TECHS.CIRCLECI, TECHS.SEMANTIC_RELEASE, TECHS.AI,
+                        TECHS.SCRUM, TECHS.PROJECT_PLANNING,
                     ]}>
                         <List language={language} trKeys={[
                             'experience.prodactive.list1',
                             'experience.prodactive.list2',
                             'experience.prodactive.list3',
+                            'experience.prodactive.list4',
+                            'experience.prodactive.list5',
+                            'experience.prodactive.list6',
                         ]}></List>
                     </Item>
 

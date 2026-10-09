@@ -73,6 +73,14 @@ export const TECHS = {
     FLUTTER:             'experience.tech.flutter',
     DART:             'experience.tech.dart',
     PWA:             'experience.tech.pwa',
+    TYPESCRIPT:            'experience.tech.typescript',
+    VITE:                  'experience.tech.vite',
+    VITEST:                'experience.tech.vitest',
+    MUI:                   'experience.tech.mui',
+    SANIC:                 'experience.tech.sanic',
+    CIRCLECI:              'experience.tech.circleci',
+    SEMANTIC_RELEASE:      'experience.tech.semanticRelease',
+    AI:                    'experience.tech.ai',
 };
 
 export default function Item({from, to, title, company, technologies, language, children}: ItemProps) {
