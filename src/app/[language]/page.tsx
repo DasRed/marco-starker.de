@@ -116,7 +116,7 @@ export default function Home({params}: MS.PageParameter) {
                         TECHS.REACTJS, TECHS.TYPESCRIPT, TECHS.VITE, TECHS.VITEST, TECHS.TAILWIND, TECHS.MUI, TECHS.PWA,
                         TECHS.NODEJS, TECHS.PYTHON, TECHS.SANIC, TECHS.POSTGRESQL,
                         TECHS.FLUTTER, TECHS.DART, TECHS.IOS, TECHS.ANDROID,
-                        TECHS.AWS, TECHS.HETZNER, TECHS.DOCKER, TECHS.CIRCLECI, TECHS.SEMANTIC_RELEASE, TECHS.AI,
+                        TECHS.AWS, TECHS.AWS_LAMBDA, TECHS.HETZNER, TECHS.DOCKER, TECHS.CIRCLECI, TECHS.SEMANTIC_RELEASE, TECHS.AI,
                         TECHS.SCRUM, TECHS.PROJECT_PLANNING,
                     ]}>
                         <List language={language} trKeys={[
@@ -142,7 +142,7 @@ export default function Home({params}: MS.PageParameter) {
 
                     <Item from={{month: 9, year: 2019}} to={{month: 11, year: 2024}} title="experience.SeniorSoftwareDeveloper" company="Zeppelin / z-Lab GmbH" language={language} technologies={[
                         TECHS.TECHNICAL_PLANNING, TECHS.DEVELOPMENT, TECHS.MAINTENANCE, TECHS.NODEJS, TECHS.STRAPI,
-                        TECHS.NEXTJS, TECHS.PHP, TECHS.LARAVEL, TECHS.SYMFONY, TECHS.SVELTE, TECHS.SASS, TECHS.AWS,
+                        TECHS.NEXTJS, TECHS.PHP, TECHS.LARAVEL, TECHS.SYMFONY, TECHS.SVELTE, TECHS.SASS, TECHS.AWS, TECHS.AWS_LAMBDA, TECHS.DYNAMODB,
                         TECHS.KUBERNETES, TECHS.DOCKER, TECHS.PERFORMANCE_ANALYSIS, TECHS.SCRUM, TECHS.PROJECT_PLANNING,
                     ]}>
                         <List language={language} trKeys={[
@@ -157,7 +157,7 @@ export default function Home({params}: MS.PageParameter) {
                     <Item from={{month: 4, year: 2016}} to={{month: 8, year: 2019}} title="experience.SeniorSoftwareDeveloper" company="posterXXL" language={language} technologies={[
                         TECHS.TECHNICAL_PLANNING, TECHS.DEVELOPMENT, TECHS.MAINTENANCE, TECHS.JAVASCRIPT, TECHS.REQUIREJS,
                         TECHS.BACKBONEJS, TECHS.PHP, TECHS.SYMFONY, TECHS.SLIM, TECHS.DOCTRINE, TECHS.DOCTRINE, TECHS.ELOQUENT,
-                        TECHS.REDIS, TECHS.MYSQL, TECHS.MONGODB, TECHS.SASS, TECHS.DOCKER, TECHS.AWS, TECHS.GIT, TECHS.PERFORMANCE_ANALYSIS,
+                        TECHS.REDIS, TECHS.MYSQL, TECHS.MONGODB, TECHS.SASS, TECHS.DOCKER, TECHS.AWS, TECHS.AWS_LAMBDA, TECHS.DYNAMODB, TECHS.RABBITMQ, TECHS.GIT, TECHS.PERFORMANCE_ANALYSIS,
                         TECHS.SCRUM, TECHS.PROJECT_PLANNING
                     ]}>
                         <List language={language} trKeys={[
@@ -202,7 +202,7 @@ export default function Home({params}: MS.PageParameter) {
                     <Item from={{month: 5, year: 2011}} to={{month: 4, year: 2013}} title="experience.TechnicalLead" company="Travian Games" language={language} technologies={[
                         TECHS.PHP, TECHS.NODEJS, TECHS.SCRUM, TECHS.DEVELOPMENT, TECHS.SQL, TECHS.WEBSERVICES, TECHS.AGILE_METHODOLOGIES, TECHS.GITFLOW, TECHS.OOP,
                         TECHS.SOFTWARE_ARCHITECTURE, TECHS.MYSQL, TECHS.FULLSTACK_DEVELOPMENT, TECHS.BACKEND_DEVELOPMENT, TECHS.CI_CD, TECHS.WEBDEVELOPMENT,
-                        TECHS.JAVASCRIPT, TECHS.UNITTESTS
+                        TECHS.JAVASCRIPT, TECHS.UNITTESTS, TECHS.RABBITMQ
                     ]}>
                         <Text trKey="experience.travian.lead" language={language}/>
                     </Item>
@@ -210,7 +210,7 @@ export default function Home({params}: MS.PageParameter) {
                     <Item from={{month: 9, year: 2009}} to={{month: 4, year: 2011}} title="experience.SeniorSoftwareDeveloper" company="Travian Games" language={language} technologies={[
                         TECHS.PHP, TECHS.NODEJS, TECHS.SCRUM, TECHS.DEVELOPMENT, TECHS.SQL, TECHS.WEBSERVICES, TECHS.AGILE_METHODOLOGIES, TECHS.GITFLOW, TECHS.OOP,
                         TECHS.SOFTWARE_ARCHITECTURE, TECHS.MYSQL, TECHS.FULLSTACK_DEVELOPMENT, TECHS.BACKEND_DEVELOPMENT, TECHS.CI_CD, TECHS.WEBDEVELOPMENT,
-                        TECHS.JAVASCRIPT, TECHS.UNITTESTS
+                        TECHS.JAVASCRIPT, TECHS.UNITTESTS, TECHS.RABBITMQ
                     ]}>
                         <Text trKey="experience.travian.developer" language={language}/>
                     </Item>

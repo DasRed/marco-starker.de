@@ -88,7 +88,7 @@ export default <MS.Translation>{
             list1: 'Docker, Kubernetes',
             list2: 'CI/CD-Pipelines',
             list3: 'Automation',
-            list4: 'AWS (EC2, Lambda, S3)',
+            list4: 'AWS (EC2, Lambda, DynamoDB, S3)',
             list5: 'Cloud Infrastructure',
         },
         architecture: {
@@ -172,6 +172,9 @@ export default <MS.Translation>{
 
         tech: {
             AWS:                  'AWS',
+            AWSLambda:            'AWS Lambda',
+            DynamoDB:             'DynamoDB',
+            RabbitMQ:             'RabbitMQ',
             AgileMethodologies:   'Agile Methodologies',
             Android:              'Android',
             BackboneJS:           'BackboneJS',
